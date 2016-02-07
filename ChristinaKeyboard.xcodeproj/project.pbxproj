@@ -22,6 +22,10 @@
 		2C2799181C0A57DB004B80CC /* 342-delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2799161C0A57DB004B80CC /* 342-delete@3x.png */; };
 		2C27991A1C0A57F0004B80CC /* 433-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2799191C0A57F0004B80CC /* 433-x@2x.png */; };
 		2C27991B1C0A57F0004B80CC /* 433-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2799191C0A57F0004B80CC /* 433-x@2x.png */; };
+		2C4895CB1C67697E0051D6B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4895CA1C67697E0051D6B7 /* CollectionViewCell.swift */; };
+		2C4895D11C679D0F0051D6B7 /* 870-smile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C4895D01C679D0F0051D6B7 /* 870-smile@3x.png */; };
+		2C5488431C66D73600D8E08B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5488421C66D73600D8E08B /* UIImage+Gif.swift */; };
+		2C5488441C66D73600D8E08B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5488421C66D73600D8E08B /* UIImage+Gif.swift */; };
 		2C63FB3F1C0B29E5009B639E /* image-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB231C0B29E5009B639E /* image-15.gif */; };
 		2C63FB401C0B29E5009B639E /* image-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB231C0B29E5009B639E /* image-15.gif */; };
 		2C63FB411C0B29E5009B639E /* image-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB241C0B29E5009B639E /* image-16.gif */; };
@@ -113,23 +117,13 @@
 		2C9BBFBC1C091C280061FFC7 /* image-13.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BBFA11C091C280061FFC7 /* image-13.gif */; };
 		2C9BBFBD1C091C280061FFC7 /* image-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BBFA21C091C280061FFC7 /* image-14.gif */; };
 		2C9BBFBE1C091C280061FFC7 /* image-14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BBFA21C091C280061FFC7 /* image-14.gif */; };
+		2CA32A751C661684004A6CF0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2CA32A741C661684004A6CF0 /* Podfile */; };
+		2CA32A771C663C2C004A6CF0 /* 350-text@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA32A761C663C2C004A6CF0 /* 350-text@3x.png */; };
 		2CC58D921C2CABFA00B5CBE4 /* 330-layers4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */; };
 		2CC58D931C2CABFA00B5CBE4 /* 330-layers4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */; };
 		2CC58D9A1C2CBAF700B5CBE4 /* intro-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D941C2CB78E00B5CBE4 /* intro-1.png */; };
 		2CC58D9B1C2CBAFA00B5CBE4 /* intro-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D951C2CB78E00B5CBE4 /* intro-2.png */; };
 		2CC58D9C1C2CBB0000B5CBE4 /* intro-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D961C2CB78E00B5CBE4 /* intro-3.png */; };
-		2CC58D9E1C2CCFA700B5CBE4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58D9D1C2CCFA700B5CBE4 /* Parse.framework */; };
-		2CC58D9F1C2CCFA700B5CBE4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58D9D1C2CCFA700B5CBE4 /* Parse.framework */; };
-		2CC58DA11C2CCFC600B5CBE4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DA01C2CCFC600B5CBE4 /* AudioToolbox.framework */; };
-		2CC58DA31C2CCFCC00B5CBE4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DA21C2CCFCC00B5CBE4 /* CFNetwork.framework */; };
-		2CC58DA51C2CCFD700B5CBE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DA41C2CCFD700B5CBE4 /* CoreGraphics.framework */; };
-		2CC58DA91C2CCFE700B5CBE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DA81C2CCFE700B5CBE4 /* QuartzCore.framework */; };
-		2CC58DAB1C2CCFED00B5CBE4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DAA1C2CCFED00B5CBE4 /* Security.framework */; };
-		2CC58DAF1C2CD00500B5CBE4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DAE1C2CD00500B5CBE4 /* SystemConfiguration.framework */; };
-		2CC58DB11C2CD01500B5CBE4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DB01C2CD01500B5CBE4 /* libz.tbd */; };
-		2CC58DB31C2CD02300B5CBE4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DB21C2CD02300B5CBE4 /* libsqlite3.tbd */; };
-		2CC58DB51C2CD04F00B5CBE4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DB41C2CD04F00B5CBE4 /* Bolts.framework */; };
-		2CC58DB61C2CD04F00B5CBE4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC58DB41C2CD04F00B5CBE4 /* Bolts.framework */; };
 		2CE6E6B91C10FB6600157CCC /* image-43.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6861C10FB6600157CCC /* image-43.gif */; };
 		2CE6E6BA1C10FB6600157CCC /* image-43.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6861C10FB6600157CCC /* image-43.gif */; };
 		2CE6E6BB1C10FB6600157CCC /* image-44.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6871C10FB6600157CCC /* image-44.gif */; };
@@ -196,24 +190,7 @@
 		2CE6E6F81C10FB6600157CCC /* image-74.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A51C10FB6600157CCC /* image-74.gif */; };
 		2CE6E6F91C10FB6600157CCC /* image-75.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A61C10FB6600157CCC /* image-75.gif */; };
 		2CE6E6FA1C10FB6600157CCC /* image-75.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A61C10FB6600157CCC /* image-75.gif */; };
-		2CE6E6FB1C10FB6600157CCC /* image-76.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A71C10FB6600157CCC /* image-76.gif */; };
-		2CE6E6FC1C10FB6600157CCC /* image-76.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A71C10FB6600157CCC /* image-76.gif */; };
-		2CE6E6FD1C10FB6600157CCC /* image-77.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A81C10FB6600157CCC /* image-77.gif */; };
-		2CE6E6FE1C10FB6600157CCC /* image-77.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A81C10FB6600157CCC /* image-77.gif */; };
-		2CE6E6FF1C10FB6600157CCC /* image-78.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A91C10FB6600157CCC /* image-78.gif */; };
-		2CE6E7001C10FB6600157CCC /* image-78.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6A91C10FB6600157CCC /* image-78.gif */; };
-		2CE6E7011C10FB6600157CCC /* image-79.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AA1C10FB6600157CCC /* image-79.gif */; };
-		2CE6E7021C10FB6600157CCC /* image-79.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AA1C10FB6600157CCC /* image-79.gif */; };
-		2CE6E7031C10FB6600157CCC /* image-80.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AB1C10FB6600157CCC /* image-80.gif */; };
-		2CE6E7041C10FB6600157CCC /* image-80.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AB1C10FB6600157CCC /* image-80.gif */; };
-		2CE6E7051C10FB6600157CCC /* image-81.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AC1C10FB6600157CCC /* image-81.gif */; };
-		2CE6E7061C10FB6600157CCC /* image-81.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AC1C10FB6600157CCC /* image-81.gif */; };
-		2CE6E7071C10FB6600157CCC /* image-82.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AD1C10FB6600157CCC /* image-82.gif */; };
-		2CE6E7081C10FB6600157CCC /* image-82.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AD1C10FB6600157CCC /* image-82.gif */; };
-		2CE6E7091C10FB6600157CCC /* image-83.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AE1C10FB6600157CCC /* image-83.gif */; };
-		2CE6E70A1C10FB6600157CCC /* image-83.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AE1C10FB6600157CCC /* image-83.gif */; };
-		2CE6E70B1C10FB6600157CCC /* image-84.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AF1C10FB6600157CCC /* image-84.gif */; };
-		2CE6E70C1C10FB6600157CCC /* image-84.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6E6AF1C10FB6600157CCC /* image-84.gif */; };
+		989CFFDEFACC8179F43F384E /* Pods_ChristinaKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C098EDF77DFB17B7FCE17D6D /* Pods_ChristinaKeyboard.framework */; };
 		A30C43C462121BB08D1D22B8 /* Pods_CKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A51D324663E9B10A1B30B705 /* Pods_CKeyboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -257,6 +234,9 @@
 		2C1DD3091C093475007E31C4 /* 888-checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "888-checkmark@2x.png"; sourceTree = "<group>"; };
 		2C2799161C0A57DB004B80CC /* 342-delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "342-delete@3x.png"; sourceTree = "<group>"; };
 		2C2799191C0A57F0004B80CC /* 433-x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "433-x@2x.png"; sourceTree = "<group>"; };
+		2C4895CA1C67697E0051D6B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2C4895D01C679D0F0051D6B7 /* 870-smile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "870-smile@3x.png"; sourceTree = "<group>"; };
+		2C5488421C66D73600D8E08B /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		2C63FB231C0B29E5009B639E /* image-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-15.gif"; sourceTree = "<group>"; };
 		2C63FB241C0B29E5009B639E /* image-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-16.gif"; sourceTree = "<group>"; };
 		2C63FB251C0B29E5009B639E /* image-17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-17.gif"; sourceTree = "<group>"; };
@@ -303,22 +283,12 @@
 		2C9BBFA01C091C280061FFC7 /* image-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-12.gif"; sourceTree = "<group>"; };
 		2C9BBFA11C091C280061FFC7 /* image-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-13.gif"; sourceTree = "<group>"; };
 		2C9BBFA21C091C280061FFC7 /* image-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-14.gif"; sourceTree = "<group>"; };
+		2CA32A741C661684004A6CF0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2CA32A761C663C2C004A6CF0 /* 350-text@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "350-text@3x.png"; sourceTree = "<group>"; };
 		2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "330-layers4@3x.png"; sourceTree = "<group>"; };
 		2CC58D941C2CB78E00B5CBE4 /* intro-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro-1.png"; sourceTree = "<group>"; };
 		2CC58D951C2CB78E00B5CBE4 /* intro-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro-2.png"; sourceTree = "<group>"; };
 		2CC58D961C2CB78E00B5CBE4 /* intro-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro-3.png"; sourceTree = "<group>"; };
-		2CC58D9D1C2CCFA700B5CBE4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		2CC58DA01C2CCFC600B5CBE4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		2CC58DA21C2CCFCC00B5CBE4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		2CC58DA41C2CCFD700B5CBE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2CC58DA61C2CCFDE00B5CBE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		2CC58DA81C2CCFE700B5CBE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		2CC58DAA1C2CCFED00B5CBE4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		2CC58DAC1C2CCFF700B5CBE4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		2CC58DAE1C2CD00500B5CBE4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		2CC58DB01C2CD01500B5CBE4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		2CC58DB21C2CD02300B5CBE4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		2CC58DB41C2CD04F00B5CBE4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		2CE6E6861C10FB6600157CCC /* image-43.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-43.gif"; sourceTree = "<group>"; };
 		2CE6E6871C10FB6600157CCC /* image-44.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-44.gif"; sourceTree = "<group>"; };
 		2CE6E6881C10FB6600157CCC /* image-45.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-45.gif"; sourceTree = "<group>"; };
@@ -352,16 +322,10 @@
 		2CE6E6A41C10FB6600157CCC /* image-73.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-73.gif"; sourceTree = "<group>"; };
 		2CE6E6A51C10FB6600157CCC /* image-74.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-74.gif"; sourceTree = "<group>"; };
 		2CE6E6A61C10FB6600157CCC /* image-75.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-75.gif"; sourceTree = "<group>"; };
-		2CE6E6A71C10FB6600157CCC /* image-76.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-76.gif"; sourceTree = "<group>"; };
-		2CE6E6A81C10FB6600157CCC /* image-77.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-77.gif"; sourceTree = "<group>"; };
-		2CE6E6A91C10FB6600157CCC /* image-78.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-78.gif"; sourceTree = "<group>"; };
-		2CE6E6AA1C10FB6600157CCC /* image-79.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-79.gif"; sourceTree = "<group>"; };
-		2CE6E6AB1C10FB6600157CCC /* image-80.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-80.gif"; sourceTree = "<group>"; };
-		2CE6E6AC1C10FB6600157CCC /* image-81.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-81.gif"; sourceTree = "<group>"; };
-		2CE6E6AD1C10FB6600157CCC /* image-82.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-82.gif"; sourceTree = "<group>"; };
-		2CE6E6AE1C10FB6600157CCC /* image-83.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-83.gif"; sourceTree = "<group>"; };
-		2CE6E6AF1C10FB6600157CCC /* image-84.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-84.gif"; sourceTree = "<group>"; };
+		67BAEC88150EEA9CC02BC861 /* Pods-ChristinaKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChristinaKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		A51D324663E9B10A1B30B705 /* Pods_CKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C098EDF77DFB17B7FCE17D6D /* Pods_ChristinaKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChristinaKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7881068852605587F9548E /* Pods-ChristinaKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChristinaKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 		E4A31D245EC29354ED4EF87F /* Pods-CKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-CKeyboard/Pods-CKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -370,16 +334,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC58DB31C2CD02300B5CBE4 /* libsqlite3.tbd in Frameworks */,
-				2CC58DB11C2CD01500B5CBE4 /* libz.tbd in Frameworks */,
-				2CC58DAF1C2CD00500B5CBE4 /* SystemConfiguration.framework in Frameworks */,
-				2CC58DAB1C2CCFED00B5CBE4 /* Security.framework in Frameworks */,
-				2CC58DA91C2CCFE700B5CBE4 /* QuartzCore.framework in Frameworks */,
-				2CC58DB51C2CD04F00B5CBE4 /* Bolts.framework in Frameworks */,
-				2CC58DA51C2CCFD700B5CBE4 /* CoreGraphics.framework in Frameworks */,
-				2CC58DA31C2CCFCC00B5CBE4 /* CFNetwork.framework in Frameworks */,
-				2CC58DA11C2CCFC600B5CBE4 /* AudioToolbox.framework in Frameworks */,
-				2CC58D9E1C2CCFA700B5CBE4 /* Parse.framework in Frameworks */,
+				989CFFDEFACC8179F43F384E /* Pods_ChristinaKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +342,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC58DB61C2CD04F00B5CBE4 /* Bolts.framework in Frameworks */,
-				2CC58D9F1C2CCFA700B5CBE4 /* Parse.framework in Frameworks */,
 				A30C43C462121BB08D1D22B8 /* Pods_CKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +354,8 @@
 			children = (
 				28D65F398C5A078ADF4E0461 /* Pods-CKeyboard.debug.xcconfig */,
 				E4A31D245EC29354ED4EF87F /* Pods-CKeyboard.release.xcconfig */,
+				67BAEC88150EEA9CC02BC861 /* Pods-ChristinaKeyboard.debug.xcconfig */,
+				DD7881068852605587F9548E /* Pods-ChristinaKeyboard.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -408,6 +363,7 @@
 		2C0003241C091253007A17D9 = {
 			isa = PBXGroup;
 			children = (
+				2CA32A741C661684004A6CF0 /* Podfile */,
 				2C00032F1C091253007A17D9 /* ChristinaKeyboard */,
 				2C0003471C0912C0007A17D9 /* CKeyboard */,
 				2C00032E1C091253007A17D9 /* Products */,
@@ -450,9 +406,13 @@
 				2C2799161C0A57DB004B80CC /* 342-delete@3x.png */,
 				2C2799191C0A57F0004B80CC /* 433-x@2x.png */,
 				2C63FB771C0B2FB9009B639E /* giphy_logo.gif */,
+				2CA32A761C663C2C004A6CF0 /* 350-text@3x.png */,
 				2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */,
+				2C4895D01C679D0F0051D6B7 /* 870-smile@3x.png */,
 				2C0003481C0912C0007A17D9 /* KeyboardViewController.swift */,
+				2C5488421C66D73600D8E08B /* UIImage+Gif.swift */,
 				2C63FB801C0B49D7009B639E /* ItemModel.swift */,
+				2C4895CA1C67697E0051D6B7 /* CollectionViewCell.swift */,
 				2C9BBF901C0916BC0061FFC7 /* KeyboardView.xib */,
 				2C00034A1C0912C0007A17D9 /* Info.plist */,
 				2C9BBFBF1C091C2E0061FFC7 /* Christinas */,
@@ -538,15 +498,6 @@
 				2CE6E6A41C10FB6600157CCC /* image-73.gif */,
 				2CE6E6A51C10FB6600157CCC /* image-74.gif */,
 				2CE6E6A61C10FB6600157CCC /* image-75.gif */,
-				2CE6E6A71C10FB6600157CCC /* image-76.gif */,
-				2CE6E6A81C10FB6600157CCC /* image-77.gif */,
-				2CE6E6A91C10FB6600157CCC /* image-78.gif */,
-				2CE6E6AA1C10FB6600157CCC /* image-79.gif */,
-				2CE6E6AB1C10FB6600157CCC /* image-80.gif */,
-				2CE6E6AC1C10FB6600157CCC /* image-81.gif */,
-				2CE6E6AD1C10FB6600157CCC /* image-82.gif */,
-				2CE6E6AE1C10FB6600157CCC /* image-83.gif */,
-				2CE6E6AF1C10FB6600157CCC /* image-84.gif */,
 			);
 			name = Christinas;
 			sourceTree = "<group>";
@@ -554,19 +505,8 @@
 		3B291A194FE0FF7802335F0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2CC58DB41C2CD04F00B5CBE4 /* Bolts.framework */,
-				2CC58DB21C2CD02300B5CBE4 /* libsqlite3.tbd */,
-				2CC58DB01C2CD01500B5CBE4 /* libz.tbd */,
-				2CC58DAE1C2CD00500B5CBE4 /* SystemConfiguration.framework */,
-				2CC58DAC1C2CCFF700B5CBE4 /* StoreKit.framework */,
-				2CC58DAA1C2CCFED00B5CBE4 /* Security.framework */,
-				2CC58DA81C2CCFE700B5CBE4 /* QuartzCore.framework */,
-				2CC58DA61C2CCFDE00B5CBE4 /* CoreLocation.framework */,
-				2CC58DA41C2CCFD700B5CBE4 /* CoreGraphics.framework */,
-				2CC58DA21C2CCFCC00B5CBE4 /* CFNetwork.framework */,
-				2CC58DA01C2CCFC600B5CBE4 /* AudioToolbox.framework */,
-				2CC58D9D1C2CCFA700B5CBE4 /* Parse.framework */,
 				A51D324663E9B10A1B30B705 /* Pods_CKeyboard.framework */,
+				C098EDF77DFB17B7FCE17D6D /* Pods_ChristinaKeyboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -578,10 +518,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C00033F1C091253007A17D9 /* Build configuration list for PBXNativeTarget "ChristinaKeyboard" */;
 			buildPhases = (
+				3E60C9457FD42BE81AE03200 /* Check Pods Manifest.lock */,
 				2C0003291C091253007A17D9 /* Sources */,
 				2C00032A1C091253007A17D9 /* Frameworks */,
 				2C00032B1C091253007A17D9 /* Resources */,
 				2C0003511C0912C0007A17D9 /* Embed App Extensions */,
+				772440206C8B8C275B879478 /* Copy Pods Resources */,
+				DF84E77C55933A2C146C742E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -601,8 +544,8 @@
 				2C0003421C0912C0007A17D9 /* Sources */,
 				2C0003431C0912C0007A17D9 /* Frameworks */,
 				2C0003441C0912C0007A17D9 /* Resources */,
-				3755B2303260D5103A3F7A52 /* Embed Pods Frameworks */,
 				437CBE7A60B05CF55FB5118E /* Copy Pods Resources */,
+				2C5188621C65771900B4D1B6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -628,9 +571,11 @@
 				TargetAttributes = {
 					2C00032C1C091253007A17D9 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 85V9SN5T6D;
 					};
 					2C0003451C0912C0007A17D9 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 85V9SN5T6D;
 					};
 				};
 			};
@@ -665,7 +610,6 @@
 				2C63FB591C0B29E5009B639E /* image-28.gif in Resources */,
 				2CE6E6E31C10FB6600157CCC /* image-64.gif in Resources */,
 				2C9BBFBB1C091C280061FFC7 /* image-13.gif in Resources */,
-				2CE6E6FF1C10FB6600157CCC /* image-78.gif in Resources */,
 				2C9BBF931C09172B0061FFC7 /* 715-globe-toolbar@3x.png in Resources */,
 				2C63FB6D1C0B29E5009B639E /* image-38.gif in Resources */,
 				2C63FB651C0B29E5009B639E /* image-34.gif in Resources */,
@@ -676,7 +620,6 @@
 				2C9BBFAB1C091C280061FFC7 /* image-5.gif in Resources */,
 				2C63FB631C0B29E5009B639E /* image-33.gif in Resources */,
 				2CE6E6CD1C10FB6600157CCC /* image-53.gif in Resources */,
-				2CE6E7071C10FB6600157CCC /* image-82.gif in Resources */,
 				2CC58D9C1C2CBB0000B5CBE4 /* intro-3.png in Resources */,
 				2C63FB691C0B29E5009B639E /* image-36.gif in Resources */,
 				2CE6E6F91C10FB6600157CCC /* image-75.gif in Resources */,
@@ -685,7 +628,6 @@
 				2C63FB491C0B29E5009B639E /* image-20.gif in Resources */,
 				2C9BBFA71C091C280061FFC7 /* image-3.gif in Resources */,
 				2CE6E6D11C10FB6600157CCC /* image-55.gif in Resources */,
-				2CE6E7011C10FB6600157CCC /* image-79.gif in Resources */,
 				2CC58D921C2CABFA00B5CBE4 /* 330-layers4@3x.png in Resources */,
 				2CE6E6F71C10FB6600157CCC /* image-74.gif in Resources */,
 				2CE6E6EF1C10FB6600157CCC /* image-70.gif in Resources */,
@@ -699,12 +641,10 @@
 				2CE6E6B91C10FB6600157CCC /* image-43.gif in Resources */,
 				2C9BBFA91C091C280061FFC7 /* image-4.gif in Resources */,
 				2C63FB711C0B29E5009B639E /* image-40.gif in Resources */,
-				2CE6E7031C10FB6600157CCC /* image-80.gif in Resources */,
 				2CC58D9B1C2CBAFA00B5CBE4 /* intro-2.png in Resources */,
 				2C63FB571C0B29E5009B639E /* image-27.gif in Resources */,
 				2C9BBFB51C091C280061FFC7 /* image-10.gif in Resources */,
 				2CE6E6BF1C10FB6600157CCC /* image-46.gif in Resources */,
-				2CE6E6FB1C10FB6600157CCC /* image-76.gif in Resources */,
 				2C9BBFAF1C091C280061FFC7 /* image-7.gif in Resources */,
 				2CE6E6ED1C10FB6600157CCC /* image-69.gif in Resources */,
 				2CE6E6DD1C10FB6600157CCC /* image-61.gif in Resources */,
@@ -717,15 +657,14 @@
 				2CE6E6DB1C10FB6600157CCC /* image-60.gif in Resources */,
 				2CE6E6E11C10FB6600157CCC /* image-63.gif in Resources */,
 				2CE6E6EB1C10FB6600157CCC /* image-68.gif in Resources */,
-				2CE6E70B1C10FB6600157CCC /* image-84.gif in Resources */,
 				2CE6E6D91C10FB6600157CCC /* image-59.gif in Resources */,
 				2C27991A1C0A57F0004B80CC /* 433-x@2x.png in Resources */,
-				2CE6E7051C10FB6600157CCC /* image-81.gif in Resources */,
 				2C9BBFA31C091C280061FFC7 /* image-1.gif in Resources */,
 				2C63FB551C0B29E5009B639E /* image-26.gif in Resources */,
 				2CE6E6CB1C10FB6600157CCC /* image-52.gif in Resources */,
 				2C1DD30A1C093475007E31C4 /* 888-checkmark@2x.png in Resources */,
 				2C63FB781C0B2FB9009B639E /* giphy_logo.gif in Resources */,
+				2CA32A751C661684004A6CF0 /* Podfile in Resources */,
 				2C9BBFB71C091C280061FFC7 /* image-11.gif in Resources */,
 				2CE6E6C11C10FB6600157CCC /* image-47.gif in Resources */,
 				2C9BBFBD1C091C280061FFC7 /* image-14.gif in Resources */,
@@ -736,7 +675,6 @@
 				2C63FB4B1C0B29E5009B639E /* image-21.gif in Resources */,
 				2C63FB531C0B29E5009B639E /* image-25.gif in Resources */,
 				2CE6E6C91C10FB6600157CCC /* image-51.gif in Resources */,
-				2CE6E7091C10FB6600157CCC /* image-83.gif in Resources */,
 				2CE6E6DF1C10FB6600157CCC /* image-62.gif in Resources */,
 				2C0003381C091253007A17D9 /* Assets.xcassets in Resources */,
 				2C9BBFAD1C091C280061FFC7 /* image-6.gif in Resources */,
@@ -748,7 +686,6 @@
 				2C9BBFB31C091C280061FFC7 /* image-9.gif in Resources */,
 				2CE6E6C71C10FB6600157CCC /* image-50.gif in Resources */,
 				2CE6E6F11C10FB6600157CCC /* image-71.gif in Resources */,
-				2CE6E6FD1C10FB6600157CCC /* image-77.gif in Resources */,
 				2C0003361C091253007A17D9 /* Main.storyboard in Resources */,
 				2CC58D9A1C2CBAF700B5CBE4 /* intro-1.png in Resources */,
 				2C9BBFA51C091C280061FFC7 /* image-2.gif in Resources */,
@@ -767,9 +704,7 @@
 				2CE6E6E41C10FB6600157CCC /* image-64.gif in Resources */,
 				2C9BBFB81C091C280061FFC7 /* image-11.gif in Resources */,
 				2C9BBFA81C091C280061FFC7 /* image-3.gif in Resources */,
-				2CE6E7021C10FB6600157CCC /* image-79.gif in Resources */,
 				2C63FB581C0B29E5009B639E /* image-27.gif in Resources */,
-				2CE6E70A1C10FB6600157CCC /* image-83.gif in Resources */,
 				2CE6E6C41C10FB6600157CCC /* image-48.gif in Resources */,
 				2CE6E6BE1C10FB6600157CCC /* image-45.gif in Resources */,
 				2C63FB791C0B2FB9009B639E /* giphy_logo.gif in Resources */,
@@ -778,18 +713,14 @@
 				2CE6E6D01C10FB6600157CCC /* image-54.gif in Resources */,
 				2C1DD3081C09327A007E31C4 /* 341-keyboard@3x.png in Resources */,
 				2CE6E6D41C10FB6600157CCC /* image-56.gif in Resources */,
-				2CE6E7061C10FB6600157CCC /* image-81.gif in Resources */,
 				2C2799181C0A57DB004B80CC /* 342-delete@3x.png in Resources */,
-				2CE6E7041C10FB6600157CCC /* image-80.gif in Resources */,
 				2C9BBFB41C091C280061FFC7 /* image-9.gif in Resources */,
 				2C63FB541C0B29E5009B639E /* image-25.gif in Resources */,
 				2C63FB421C0B29E5009B639E /* image-16.gif in Resources */,
-				2CE6E6FE1C10FB6600157CCC /* image-77.gif in Resources */,
 				2CE6E6F21C10FB6600157CCC /* image-71.gif in Resources */,
 				2CE6E6E21C10FB6600157CCC /* image-63.gif in Resources */,
 				2C63FB561C0B29E5009B639E /* image-26.gif in Resources */,
 				2C63FB6A1C0B29E5009B639E /* image-36.gif in Resources */,
-				2CE6E7001C10FB6600157CCC /* image-78.gif in Resources */,
 				2CE6E6DC1C10FB6600157CCC /* image-60.gif in Resources */,
 				2C9BBFAC1C091C280061FFC7 /* image-5.gif in Resources */,
 				2CE6E6EA1C10FB6600157CCC /* image-67.gif in Resources */,
@@ -797,11 +728,9 @@
 				2C63FB521C0B29E5009B639E /* image-24.gif in Resources */,
 				2CE6E6CE1C10FB6600157CCC /* image-53.gif in Resources */,
 				2C9BBF911C0916BC0061FFC7 /* KeyboardView.xib in Resources */,
-				2CE6E6FC1C10FB6600157CCC /* image-76.gif in Resources */,
 				2C9BBFBE1C091C280061FFC7 /* image-14.gif in Resources */,
 				2C27991B1C0A57F0004B80CC /* 433-x@2x.png in Resources */,
 				2CE6E6C01C10FB6600157CCC /* image-46.gif in Resources */,
-				2CE6E7081C10FB6600157CCC /* image-82.gif in Resources */,
 				2CE6E6CC1C10FB6600157CCC /* image-52.gif in Resources */,
 				2C1DD30B1C093475007E31C4 /* 888-checkmark@2x.png in Resources */,
 				2CC58D931C2CABFA00B5CBE4 /* 330-layers4@3x.png in Resources */,
@@ -818,9 +747,10 @@
 				2C63FB661C0B29E5009B639E /* image-34.gif in Resources */,
 				2CE6E6EE1C10FB6600157CCC /* image-69.gif in Resources */,
 				2CE6E6F61C10FB6600157CCC /* image-73.gif in Resources */,
-				2CE6E70C1C10FB6600157CCC /* image-84.gif in Resources */,
 				2C9BBFBC1C091C280061FFC7 /* image-13.gif in Resources */,
 				2CE6E6D21C10FB6600157CCC /* image-55.gif in Resources */,
+				2C4895D11C679D0F0051D6B7 /* 870-smile@3x.png in Resources */,
+				2CA32A771C663C2C004A6CF0 /* 350-text@3x.png in Resources */,
 				2C9BBFB21C091C280061FFC7 /* image-8.gif in Resources */,
 				2CE6E6E81C10FB6600157CCC /* image-66.gif in Resources */,
 				2C9BBFB01C091C280061FFC7 /* image-7.gif in Resources */,
@@ -860,19 +790,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3755B2303260D5103A3F7A52 /* Embed Pods Frameworks */ = {
+		2C5188621C65771900B4D1B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CKeyboard/Pods-CKeyboard-frameworks.sh\"\n";
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
+		};
+		3E60C9457FD42BE81AE03200 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		437CBE7A60B05CF55FB5118E /* Copy Pods Resources */ = {
@@ -905,6 +848,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		772440206C8B8C275B879478 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF84E77C55933A2C146C742E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -914,6 +887,7 @@
 			files = (
 				2C63FB811C0B49D7009B639E /* ItemModel.swift in Sources */,
 				2C0003331C091253007A17D9 /* ViewController.swift in Sources */,
+				2C5488431C66D73600D8E08B /* UIImage+Gif.swift in Sources */,
 				2C0003311C091253007A17D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -922,6 +896,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4895CB1C67697E0051D6B7 /* CollectionViewCell.swift in Sources */,
+				2C5488441C66D73600D8E08B /* UIImage+Gif.swift in Sources */,
 				2C63FB821C0B49D7009B639E /* ItemModel.swift in Sources */,
 				2C0003491C0912C0007A17D9 /* KeyboardViewController.swift in Sources */,
 			);
@@ -1042,15 +1018,18 @@
 		};
 		2C0003401C091253007A17D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67BAEC88150EEA9CC02BC861 /* Pods-ChristinaKeyboard.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ChristinaKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcushirst.ChristinaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1060,15 +1039,18 @@
 		};
 		2C0003411C091253007A17D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD7881068852605587F9548E /* Pods-ChristinaKeyboard.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ChristinaKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcushirst.ChristinaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1080,15 +1062,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28D65F398C5A078ADF4E0461 /* Pods-CKeyboard.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcushirst.ChristinaKeyboard.CKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1097,15 +1083,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4A31D245EC29354ED4EF87F /* Pods-CKeyboard.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcushirst.ChristinaKeyboard.CKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

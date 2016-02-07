@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-import Parse
 
 
 class ViewController: UIViewController, UIScrollViewDelegate {
@@ -19,13 +18,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var pageControl: UIPageControl!
     @IBOutlet var scrollView: UIScrollView!
     
-    @IBOutlet var UpdateButton: UIButton!
-    @IBOutlet var UpdateText: UILabel!
-    
     @IBOutlet var ReplayIntroButton: UIButton!
     @IBOutlet var GotIt: UIButton!
     
     @IBOutlet var VersionLabel: UILabel!
+    @IBOutlet var ChristinaLabel: UILabel!
     
     override func viewDidLoad() {
         
@@ -43,9 +40,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             loadintro()
             defaults.setObject("read", forKey: "intro")
         }
-        
-        self.UpdateButton.hidden = true
-        checkupdate()
         
         let nsObject: AnyObject? = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"]
         let Appversion = nsObject as! String
@@ -80,7 +74,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         loadVisiblePages()
     }
     
-    func checkupdate() {
+/*    func checkupdate() {
         
         self.UpdateButton.hidden = true
         self.UpdateText.text = "No Update Available"
@@ -111,11 +105,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
-    
-    @IBAction func UpdateSafari(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(NSURL(string:"https://static.marcushirst.com/christina")!)
-    }
-
+*/
     
     func loadPage(page: Int) {
         if page < 0 || page >= pageImages.count {

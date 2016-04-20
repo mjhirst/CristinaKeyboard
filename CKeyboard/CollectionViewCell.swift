@@ -14,13 +14,14 @@ class CollectionViewCell: UICollectionViewCell {
     
 override init(frame: CGRect) {
     
-    imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
+    imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 120, height: 62))
     imageView.contentMode = UIViewContentMode.ScaleAspectFill
     imageView.clipsToBounds = true
     imageView.backgroundColor = UIColor.clearColor()
     
-    textView = UILabel(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
+    textView = UILabel(frame: CGRect(x: 0, y: 0, width: 32, height: 32))
     textView.userInteractionEnabled = false
+//    textView.selectable = false
     textView.backgroundColor = UIColor.clearColor()
     textView.textAlignment = .Center
     textView.font = UIFont.systemFontOfSize(30)

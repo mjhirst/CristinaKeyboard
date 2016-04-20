@@ -9,17 +9,12 @@
 import UIKit
 
 class CollectionViewEmoji: UICollectionViewCell {
-    var imageView: UIImageView!
     var textView: UILabel!
     
     override init(frame: CGRect) {
         
-        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
-        imageView.contentMode = UIViewContentMode.ScaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.backgroundColor = UIColor.clearColor()
         
-        textView = UILabel(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
+        textView = UILabel(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         textView.userInteractionEnabled = false
         textView.backgroundColor = UIColor.clearColor()
         textView.textAlignment = .Center
@@ -27,7 +22,6 @@ class CollectionViewEmoji: UICollectionViewCell {
         
         super.init(frame: frame)
         contentView.addSubview(textView)
-        contentView.addSubview(imageView)
         
         
         

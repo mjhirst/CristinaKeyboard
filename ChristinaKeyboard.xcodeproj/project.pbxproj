@@ -24,8 +24,7 @@
 		2C27991B1C0A57F0004B80CC /* 433-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2799191C0A57F0004B80CC /* 433-x@2x.png */; };
 		2C4895CB1C67697E0051D6B7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4895CA1C67697E0051D6B7 /* CollectionViewCell.swift */; };
 		2C4895D11C679D0F0051D6B7 /* 870-smile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C4895D01C679D0F0051D6B7 /* 870-smile@3x.png */; };
-		2C5488431C66D73600D8E08B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5488421C66D73600D8E08B /* UIImage+Gif.swift */; };
-		2C5488441C66D73600D8E08B /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5488421C66D73600D8E08B /* UIImage+Gif.swift */; };
+		2C48B05E1CC79C1B00C74619 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48B05D1CC79C1B00C74619 /* Constants.swift */; };
 		2C63FB3F1C0B29E5009B639E /* image-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB231C0B29E5009B639E /* image-15.gif */; };
 		2C63FB401C0B29E5009B639E /* image-15.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB231C0B29E5009B639E /* image-15.gif */; };
 		2C63FB411C0B29E5009B639E /* image-16.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB241C0B29E5009B639E /* image-16.gif */; };
@@ -84,8 +83,11 @@
 		2C63FB761C0B29E5009B639E /* image-42.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB3E1C0B29E5009B639E /* image-42.gif */; };
 		2C63FB781C0B2FB9009B639E /* giphy_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB771C0B2FB9009B639E /* giphy_logo.gif */; };
 		2C63FB791C0B2FB9009B639E /* giphy_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C63FB771C0B2FB9009B639E /* giphy_logo.gif */; };
-		2C63FB811C0B49D7009B639E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63FB801C0B49D7009B639E /* ItemModel.swift */; };
-		2C63FB821C0B49D7009B639E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63FB801C0B49D7009B639E /* ItemModel.swift */; };
+		2C9A472F1CC7F34500CC9BD8 /* christina_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A472E1CC7F34500CC9BD8 /* christina_outline.png */; };
+		2C9A47301CC7F34500CC9BD8 /* christina_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A472E1CC7F34500CC9BD8 /* christina_outline.png */; };
+		2C9A47321CC7F68200CC9BD8 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A47311CC7F68200CC9BD8 /* settings.png */; };
+		2C9A47331CC7F68200CC9BD8 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9A47311CC7F68200CC9BD8 /* settings.png */; };
+		2C9A47351CC8004500CC9BD8 /* CollectionViewEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A47341CC8004500CC9BD8 /* CollectionViewEmoji.swift */; };
 		2C9BBF911C0916BC0061FFC7 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BBF901C0916BC0061FFC7 /* KeyboardView.xib */; };
 		2C9BBF931C09172B0061FFC7 /* 715-globe-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BBF921C09172B0061FFC7 /* 715-globe-toolbar@3x.png */; };
 		2C9BBF941C09172B0061FFC7 /* 715-globe-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BBF921C09172B0061FFC7 /* 715-globe-toolbar@3x.png */; };
@@ -236,7 +238,7 @@
 		2C2799191C0A57F0004B80CC /* 433-x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "433-x@2x.png"; sourceTree = "<group>"; };
 		2C4895CA1C67697E0051D6B7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		2C4895D01C679D0F0051D6B7 /* 870-smile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "870-smile@3x.png"; sourceTree = "<group>"; };
-		2C5488421C66D73600D8E08B /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		2C48B05D1CC79C1B00C74619 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C63FB231C0B29E5009B639E /* image-15.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-15.gif"; sourceTree = "<group>"; };
 		2C63FB241C0B29E5009B639E /* image-16.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-16.gif"; sourceTree = "<group>"; };
 		2C63FB251C0B29E5009B639E /* image-17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-17.gif"; sourceTree = "<group>"; };
@@ -266,7 +268,10 @@
 		2C63FB3D1C0B29E5009B639E /* image-41.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-41.gif"; sourceTree = "<group>"; };
 		2C63FB3E1C0B29E5009B639E /* image-42.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-42.gif"; sourceTree = "<group>"; };
 		2C63FB771C0B2FB9009B639E /* giphy_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy_logo.gif; sourceTree = "<group>"; };
-		2C63FB801C0B49D7009B639E /* ItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		2C9A472D1CC7E3AD00CC9BD8 /* update.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
+		2C9A472E1CC7F34500CC9BD8 /* christina_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = christina_outline.png; path = ../CKeyboard/christina_outline.png; sourceTree = "<group>"; };
+		2C9A47311CC7F68200CC9BD8 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		2C9A47341CC8004500CC9BD8 /* CollectionViewEmoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewEmoji.swift; sourceTree = "<group>"; };
 		2C9BBF901C0916BC0061FFC7 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 		2C9BBF921C09172B0061FFC7 /* 715-globe-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "715-globe-toolbar@3x.png"; path = "../ChristinaKeyboard/715-globe-toolbar@3x.png"; sourceTree = "<group>"; };
 		2C9BBF951C091C280061FFC7 /* image-1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-1.gif"; sourceTree = "<group>"; };
@@ -283,7 +288,7 @@
 		2C9BBFA01C091C280061FFC7 /* image-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-12.gif"; sourceTree = "<group>"; };
 		2C9BBFA11C091C280061FFC7 /* image-13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-13.gif"; sourceTree = "<group>"; };
 		2C9BBFA21C091C280061FFC7 /* image-14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "image-14.gif"; sourceTree = "<group>"; };
-		2CA32A741C661684004A6CF0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2CA32A741C661684004A6CF0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2CA32A761C663C2C004A6CF0 /* 350-text@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "350-text@3x.png"; sourceTree = "<group>"; };
 		2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "330-layers4@3x.png"; sourceTree = "<group>"; };
 		2CC58D941C2CB78E00B5CBE4 /* intro-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro-1.png"; sourceTree = "<group>"; };
@@ -364,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				2CA32A741C661684004A6CF0 /* Podfile */,
+				2C9A472D1CC7E3AD00CC9BD8 /* update.sh */,
 				2C00032F1C091253007A17D9 /* ChristinaKeyboard */,
 				2C0003471C0912C0007A17D9 /* CKeyboard */,
 				2C00032E1C091253007A17D9 /* Products */,
@@ -385,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				2C0003301C091253007A17D9 /* AppDelegate.swift */,
+				2C48B05D1CC79C1B00C74619 /* Constants.swift */,
 				2C0003321C091253007A17D9 /* ViewController.swift */,
 				2C0003341C091253007A17D9 /* Main.storyboard */,
 				2C0003371C091253007A17D9 /* Assets.xcassets */,
@@ -393,6 +400,8 @@
 				2CC58D941C2CB78E00B5CBE4 /* intro-1.png */,
 				2CC58D951C2CB78E00B5CBE4 /* intro-2.png */,
 				2CC58D961C2CB78E00B5CBE4 /* intro-3.png */,
+				2C9A47311CC7F68200CC9BD8 /* settings.png */,
+				2C9A472E1CC7F34500CC9BD8 /* christina_outline.png */,
 			);
 			path = ChristinaKeyboard;
 			sourceTree = "<group>";
@@ -410,9 +419,8 @@
 				2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */,
 				2C4895D01C679D0F0051D6B7 /* 870-smile@3x.png */,
 				2C0003481C0912C0007A17D9 /* KeyboardViewController.swift */,
-				2C5488421C66D73600D8E08B /* UIImage+Gif.swift */,
-				2C63FB801C0B49D7009B639E /* ItemModel.swift */,
 				2C4895CA1C67697E0051D6B7 /* CollectionViewCell.swift */,
+				2C9A47341CC8004500CC9BD8 /* CollectionViewEmoji.swift */,
 				2C9BBF901C0916BC0061FFC7 /* KeyboardView.xib */,
 				2C00034A1C0912C0007A17D9 /* Info.plist */,
 				2C9BBFBF1C091C2E0061FFC7 /* Christinas */,
@@ -546,6 +554,7 @@
 				2C0003441C0912C0007A17D9 /* Resources */,
 				437CBE7A60B05CF55FB5118E /* Copy Pods Resources */,
 				2C5188621C65771900B4D1B6 /* ShellScript */,
+				597E9D18B5CD59B64D1FD478 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -627,6 +636,7 @@
 				2C9BBFB91C091C280061FFC7 /* image-12.gif in Resources */,
 				2C63FB491C0B29E5009B639E /* image-20.gif in Resources */,
 				2C9BBFA71C091C280061FFC7 /* image-3.gif in Resources */,
+				2C9A472F1CC7F34500CC9BD8 /* christina_outline.png in Resources */,
 				2CE6E6D11C10FB6600157CCC /* image-55.gif in Resources */,
 				2CC58D921C2CABFA00B5CBE4 /* 330-layers4@3x.png in Resources */,
 				2CE6E6F71C10FB6600157CCC /* image-74.gif in Resources */,
@@ -638,6 +648,7 @@
 				2C63FB611C0B29E5009B639E /* image-32.gif in Resources */,
 				2CE6E6F51C10FB6600157CCC /* image-73.gif in Resources */,
 				2CE6E6BB1C10FB6600157CCC /* image-44.gif in Resources */,
+				2C9A47321CC7F68200CC9BD8 /* settings.png in Resources */,
 				2CE6E6B91C10FB6600157CCC /* image-43.gif in Resources */,
 				2C9BBFA91C091C280061FFC7 /* image-4.gif in Resources */,
 				2C63FB711C0B29E5009B639E /* image-40.gif in Resources */,
@@ -711,6 +722,7 @@
 				2CE6E6DE1C10FB6600157CCC /* image-61.gif in Resources */,
 				2C63FB501C0B29E5009B639E /* image-23.gif in Resources */,
 				2CE6E6D01C10FB6600157CCC /* image-54.gif in Resources */,
+				2C9A47331CC7F68200CC9BD8 /* settings.png in Resources */,
 				2C1DD3081C09327A007E31C4 /* 341-keyboard@3x.png in Resources */,
 				2CE6E6D41C10FB6600157CCC /* image-56.gif in Resources */,
 				2C2799181C0A57DB004B80CC /* 342-delete@3x.png in Resources */,
@@ -751,6 +763,7 @@
 				2CE6E6D21C10FB6600157CCC /* image-55.gif in Resources */,
 				2C4895D11C679D0F0051D6B7 /* 870-smile@3x.png in Resources */,
 				2CA32A771C663C2C004A6CF0 /* 350-text@3x.png in Resources */,
+				2C9A47301CC7F34500CC9BD8 /* christina_outline.png in Resources */,
 				2C9BBFB21C091C280061FFC7 /* image-8.gif in Resources */,
 				2CE6E6E81C10FB6600157CCC /* image-66.gif in Resources */,
 				2C9BBFB01C091C280061FFC7 /* image-7.gif in Resources */,
@@ -848,6 +861,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		597E9D18B5CD59B64D1FD478 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CKeyboard/Pods-CKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		772440206C8B8C275B879478 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -885,9 +913,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C63FB811C0B49D7009B639E /* ItemModel.swift in Sources */,
+				2C48B05E1CC79C1B00C74619 /* Constants.swift in Sources */,
 				2C0003331C091253007A17D9 /* ViewController.swift in Sources */,
-				2C5488431C66D73600D8E08B /* UIImage+Gif.swift in Sources */,
 				2C0003311C091253007A17D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -896,9 +923,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C9A47351CC8004500CC9BD8 /* CollectionViewEmoji.swift in Sources */,
 				2C4895CB1C67697E0051D6B7 /* CollectionViewCell.swift in Sources */,
-				2C5488441C66D73600D8E08B /* UIImage+Gif.swift in Sources */,
-				2C63FB821C0B49D7009B639E /* ItemModel.swift in Sources */,
 				2C0003491C0912C0007A17D9 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

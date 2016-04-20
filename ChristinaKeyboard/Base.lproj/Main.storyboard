@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 Happy Birthday Liz edition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZb-eQ-rkj">
-                                <rect key="frame" x="34" y="227" width="253" height="21"/>
+                                <rect key="frame" x="26" y="273" width="269" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="UeL-RQ-Hz1"/>
                                 </constraints>
@@ -46,8 +46,8 @@
                                 <color key="textColor" red="1" green="0.38374030590000002" blue="0.31600964069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-JV-kZv">
-                                <rect key="frame" x="79" y="148" width="160" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-JV-kZv">
+                                <rect key="frame" x="84" y="148" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Replay How to Install">
                                     <color key="titleColor" red="0.18039215689999999" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,17 +56,35 @@
                                     <action selector="ReplayIntro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dU0-hE-wUO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75 Christinas in this version!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahi-hO-LXp">
-                                <rect key="frame" x="34" y="209" width="253" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUQ-cy-cZt">
+                                <rect key="frame" x="85" y="302" width="150" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="mbR-AD-Mxm"/>
+                                    <constraint firstAttribute="width" constant="150" id="bQo-ae-yJu"/>
+                                    <constraint firstAttribute="height" constant="30" id="dgS-OV-IoF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Push Notifications">
+                                    <color key="titleColor" red="0.18039215689999999" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RegisterForNotifications" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6N-7s-PXE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="× 75" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahi-hO-LXp">
+                                <rect key="frame" x="186" y="211" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.52941176469999995" green="0.53725490200000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="tFG-jP-HQH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="538"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="christina_outline.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWW-ft-ZvV">
+                                <rect key="frame" x="134" y="196" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="XP7-eW-W23"/>
+                                    <constraint firstAttribute="width" constant="52" id="zrX-a3-2x2"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="tFG-jP-HQH">
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="538"/>
                                 <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="wgs-XY-gOj"/>
@@ -75,23 +93,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tFG-jP-HQH" secondAttribute="bottom" constant="30" id="08s-RV-hZk"/>
+                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="top" secondItem="EWW-ft-ZvV" secondAttribute="bottom" constant="25" id="7AZ-00-lwU"/>
                             <constraint firstItem="PAQ-JV-kZv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="C6B-Rb-b23"/>
-                            <constraint firstItem="ahi-hO-LXp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CU0-ce-OFc"/>
-                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="227" id="FQS-GM-wlq"/>
-                            <constraint firstItem="tFG-jP-HQH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gjl-5o-eiG"/>
-                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="top" secondItem="PAQ-JV-kZv" secondAttribute="bottom" constant="49" id="Hhg-lx-hhM"/>
-                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="leading" secondItem="ahi-hO-LXp" secondAttribute="leading" id="I5F-BR-QeR"/>
+                            <constraint firstItem="tFG-jP-HQH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Eui-w2-ykY"/>
+                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="273" id="FQS-GM-wlq"/>
+                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="top" secondItem="PAQ-JV-kZv" secondAttribute="bottom" constant="95" id="Hhg-lx-hhM"/>
+                            <constraint firstItem="tFG-jP-HQH" firstAttribute="centerX" secondItem="gUQ-cy-cZt" secondAttribute="centerX" id="HjJ-ep-VGg"/>
+                            <constraint firstItem="ahi-hO-LXp" firstAttribute="top" secondItem="PAQ-JV-kZv" secondAttribute="bottom" constant="33" id="I6h-RQ-sqA"/>
+                            <constraint firstItem="gUQ-cy-cZt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JkL-lx-JBX"/>
+                            <constraint firstItem="tFG-jP-HQH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nuq-oQ-APu"/>
+                            <constraint firstItem="gUQ-cy-cZt" firstAttribute="top" secondItem="KZb-eQ-rkj" secondAttribute="bottom" constant="8" id="Ooa-sM-LPh"/>
                             <constraint firstItem="Kzp-pS-Pcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QHA-Wf-UQc"/>
-                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="Qzv-me-kH9"/>
-                            <constraint firstItem="ahi-hO-LXp" firstAttribute="centerX" secondItem="tFG-jP-HQH" secondAttribute="centerX" id="VFx-3C-ZNY"/>
+                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Qzv-me-kH9"/>
+                            <constraint firstItem="EWW-ft-ZvV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X8m-WE-X5o"/>
                             <constraint firstItem="Kzp-pS-Pcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xxl-Qw-UOA"/>
+                            <constraint firstItem="EWW-ft-ZvV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YDg-i7-OyM"/>
+                            <constraint firstItem="ahi-hO-LXp" firstAttribute="centerY" secondItem="EWW-ft-ZvV" secondAttribute="centerY" id="YZW-3b-lty"/>
                             <constraint firstItem="KZb-eQ-rkj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFC-TT-d9s"/>
-                            <constraint firstItem="ahi-hO-LXp" firstAttribute="top" secondItem="PAQ-JV-kZv" secondAttribute="bottom" constant="31" id="aFd-oj-wrt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cPQ-xL-EM6" secondAttribute="bottom" constant="6" id="deR-a8-Z0y"/>
                             <constraint firstItem="Kzp-pS-Pcd" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="eap-4k-2yc"/>
-                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="centerX" secondItem="tFG-jP-HQH" secondAttribute="centerX" id="f2b-0r-VXu"/>
+                            <constraint firstItem="KZb-eQ-rkj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ilY-yf-p6n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cPQ-xL-EM6" secondAttribute="trailing" constant="-13" id="mlr-7K-WKW"/>
-                            <constraint firstItem="tFG-jP-HQH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qS3-na-1m8"/>
+                            <constraint firstItem="EWW-ft-ZvV" firstAttribute="top" secondItem="PAQ-JV-kZv" secondAttribute="bottom" constant="18" id="qPi-ax-wc1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ahi-hO-LXp" secondAttribute="trailing" constant="46" id="v7L-Pw-QCo"/>
+                            <constraint firstItem="ahi-hO-LXp" firstAttribute="leading" secondItem="EWW-ft-ZvV" secondAttribute="trailing" id="vlw-cr-VpR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -107,4 +133,7 @@
             <point key="canvasLocation" x="162" y="406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="christina_outline.png" width="200" height="200"/>
+    </resources>
 </document>

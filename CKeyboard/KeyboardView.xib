@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CKeyboard" customModuleProvider="target">
@@ -12,10 +12,8 @@
                 <outlet property="CopiedTextView" destination="5Z4-Kl-Y0i" id="gmG-Qc-1JS"/>
                 <outlet property="DismissKeyboardButton" destination="EWi-Fl-Lp9" id="iAv-IW-56x"/>
                 <outlet property="EmojiModeButton" destination="yeb-y9-yMK" id="PUV-Gy-5W2"/>
-                <outlet property="GiphyModeButton" destination="EAX-AO-lZF" id="Fs1-lC-kP8"/>
                 <outlet property="NumberOfChristinas" destination="oSK-oh-J04" id="v2W-fV-UEV"/>
                 <outlet property="SaveModeButton" destination="ajK-Bj-bay" id="dJQ-sT-Nsn"/>
-                <outlet property="TextModeButton" destination="z0K-V7-d1V" id="DQC-kq-tZI"/>
                 <outlet property="collectionView" destination="apH-G1-RhD" id="dqb-Kr-rCg"/>
                 <outlet property="nextKeyboardButton" destination="Jkp-Gn-dpA" id="gmv-bs-WRM"/>
             </connections>
@@ -80,9 +78,10 @@
                         <action selector="ButtondeleteKeyboard:" destination="-1" eventType="touchUpInside" id="ptc-MD-7Ge"/>
                     </connections>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="apH-G1-RhD">
+                <collectionView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="apH-G1-RhD">
                     <rect key="frame" x="0.0" y="32" width="320" height="144"/>
                     <color key="backgroundColor" red="0.95686274509803926" green="0.95294117647058818" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="scrollIndicatorInsets" minX="7" minY="3" maxX="7" maxY="3"/>
                     <collectionViewLayout key="collectionViewLayout" id="WSf-6S-fsV"/>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christina Copied!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z4-Kl-Y0i">
@@ -95,24 +94,6 @@
                     <color key="textColor" red="0.52941176469999995" green="0.53725490200000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" tag="700" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0K-V7-d1V">
-                    <rect key="frame" x="132" y="176" width="44" height="44"/>
-                    <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="44" id="PJm-op-WKJ"/>
-                        <constraint firstAttribute="height" constant="45" id="kh9-dH-gLt"/>
-                    </constraints>
-                    <inset key="contentEdgeInsets" minX="11" minY="11" maxX="11" maxY="11"/>
-                    <state key="normal" image="350-text.png"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="kh9-dH-gLt"/>
-                        </mask>
-                    </variation>
-                    <connections>
-                        <action selector="Switchmode:" destination="-1" eventType="touchUpInside" id="HIu-aQ-MZJ"/>
-                    </connections>
-                </button>
                 <button opaque="NO" tag="500" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajK-Bj-bay">
                     <rect key="frame" x="88" y="176" width="44" height="44"/>
                     <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -121,7 +102,7 @@
                         <constraint firstAttribute="height" constant="44" id="R6G-k1-0m4"/>
                     </constraints>
                     <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
-                    <state key="normal" image="330-layers4.png"/>
+                    <state key="normal" image="christina_outline.png"/>
                     <connections>
                         <action selector="Switchmode:" destination="-1" eventType="touchUpInside" id="eZ1-UL-wmk"/>
                     </connections>
@@ -137,11 +118,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" tag="800" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-y9-yMK">
-                    <rect key="frame" x="176" y="176" width="44" height="44"/>
+                    <rect key="frame" x="132" y="176" width="44" height="44"/>
                     <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="44" id="4En-1N-3zU"/>
-                        <constraint firstAttribute="height" constant="44" id="w0W-FD-2RA"/>
+                        <constraint firstAttribute="width" constant="44" id="Agz-Wo-XvO"/>
+                        <constraint firstAttribute="height" constant="44" id="aLp-p3-Jys"/>
                     </constraints>
                     <inset key="contentEdgeInsets" minX="11" minY="11" maxX="11" maxY="11"/>
                     <state key="normal" image="870-smile.png"/>
@@ -149,33 +130,18 @@
                         <action selector="Switchmode:" destination="-1" eventType="touchUpInside" id="N2f-ee-jd0"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="600" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAX-AO-lZF">
-                    <rect key="frame" x="220" y="176" width="44" height="44"/>
-                    <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="44" id="GPU-0N-PFe"/>
-                        <constraint firstAttribute="height" constant="44" id="wCT-Wy-Rmh"/>
-                    </constraints>
-                    <inset key="contentEdgeInsets" minX="11" minY="11" maxX="11" maxY="11"/>
-                    <state key="normal" image="giphy_logo.gif"/>
-                    <connections>
-                        <action selector="Switchmode:" destination="-1" eventType="touchUpInside" id="5dg-Hu-LIU"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="yeb-y9-yMK" firstAttribute="leading" secondItem="z0K-V7-d1V" secondAttribute="trailing" id="0I7-AW-zMl"/>
                 <constraint firstItem="izp-EW-va5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="3Wc-an-FZE"/>
                 <constraint firstAttribute="bottom" secondItem="EWi-Fl-Lp9" secondAttribute="bottom" id="4RY-R4-lwM"/>
-                <constraint firstAttribute="bottom" secondItem="z0K-V7-d1V" secondAttribute="bottom" id="53V-et-VYY"/>
-                <constraint firstItem="z0K-V7-d1V" firstAttribute="leading" secondItem="ajK-Bj-bay" secondAttribute="trailing" id="7de-Xy-yf3"/>
                 <constraint firstAttribute="bottom" secondItem="Jkp-Gn-dpA" secondAttribute="bottom" id="8CE-m0-LUk"/>
                 <constraint firstAttribute="trailing" secondItem="6xI-tN-2hz" secondAttribute="trailing" id="9Mz-Qh-I74"/>
                 <constraint firstItem="oSK-oh-J04" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="Asg-LF-DIX"/>
-                <constraint firstAttribute="bottom" secondItem="yeb-y9-yMK" secondAttribute="bottom" id="Fsm-BK-Ify"/>
+                <constraint firstAttribute="bottom" secondItem="yeb-y9-yMK" secondAttribute="bottom" id="BSo-ii-l6V"/>
+                <constraint firstItem="yeb-y9-yMK" firstAttribute="leading" secondItem="ajK-Bj-bay" secondAttribute="trailing" id="F1K-VK-hFx"/>
                 <constraint firstAttribute="trailing" secondItem="oSK-oh-J04" secondAttribute="trailing" constant="8" id="G3F-Ms-jUB"/>
-                <constraint firstItem="yeb-y9-yMK" firstAttribute="top" secondItem="apH-G1-RhD" secondAttribute="bottom" id="JK4-mE-Pj1"/>
+                <constraint firstItem="yeb-y9-yMK" firstAttribute="top" secondItem="apH-G1-RhD" secondAttribute="bottom" id="Iak-7f-GRh"/>
                 <constraint firstAttribute="trailing" secondItem="apH-G1-RhD" secondAttribute="trailing" id="ORc-Gx-EVG"/>
                 <constraint firstItem="apH-G1-RhD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="PuT-2m-DfU"/>
                 <constraint firstItem="5Z4-Kl-Y0i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="QhE-Sm-gXm"/>
@@ -184,12 +150,9 @@
                 <constraint firstAttribute="bottom" secondItem="ajK-Bj-bay" secondAttribute="bottom" id="VHk-eZ-zR5"/>
                 <constraint firstItem="EWi-Fl-Lp9" firstAttribute="leading" secondItem="Jkp-Gn-dpA" secondAttribute="trailing" id="aQj-fv-Jat"/>
                 <constraint firstItem="ajK-Bj-bay" firstAttribute="leading" secondItem="EWi-Fl-Lp9" secondAttribute="trailing" id="bND-Ua-aA1"/>
-                <constraint firstItem="EAX-AO-lZF" firstAttribute="leading" secondItem="yeb-y9-yMK" secondAttribute="trailing" id="gU4-RJ-xzg"/>
                 <constraint firstItem="apH-G1-RhD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="i6d-ot-Hev"/>
                 <constraint firstItem="Jkp-Gn-dpA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jdN-dG-rUW"/>
-                <constraint firstAttribute="bottom" secondItem="EAX-AO-lZF" secondAttribute="bottom" id="q3l-re-b7S"/>
                 <constraint firstItem="izp-EW-va5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="wxV-0k-tHV"/>
-                <constraint firstItem="EAX-AO-lZF" firstAttribute="top" secondItem="apH-G1-RhD" secondAttribute="bottom" id="xmw-Yf-MqW"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -197,13 +160,11 @@
         </view>
     </objects>
     <resources>
-        <image name="330-layers4.png" width="26" height="25"/>
         <image name="341-keyboard.png" width="33" height="21"/>
         <image name="342-delete.png" width="27" height="18"/>
-        <image name="350-text.png" width="18" height="20"/>
         <image name="715-globe-toolbar.png" width="22" height="22"/>
         <image name="870-smile.png" width="28" height="28"/>
         <image name="888-checkmark.png" width="28" height="28"/>
-        <image name="giphy_logo.gif" width="660" height="722"/>
+        <image name="christina_outline.png" width="200" height="200"/>
     </resources>
 </document>

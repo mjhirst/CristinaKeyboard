@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Batch
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
         
+        //TODO: switch to live api key before store release
+        Batch.startWithAPIKey(Global.Batch_Dev_Key)
+        
+        let editor = BatchUser.editor()
+        editor.setAttribute("Developer", forKey:"channel") // Set an attribute
+        editor.save() // Don't forget to save the changes
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject])
+    {
+        
+         BatchPush.dismissNotifications()
+
     }
 
     func applicationWillResignActive(application: UIApplication) {

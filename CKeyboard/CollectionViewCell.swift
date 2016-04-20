@@ -21,7 +21,6 @@ override init(frame: CGRect) {
     
     textView = UILabel(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
     textView.userInteractionEnabled = false
-//    textView.selectable = false
     textView.backgroundColor = UIColor.clearColor()
     textView.textAlignment = .Center
     textView.font = UIFont.systemFontOfSize(30)

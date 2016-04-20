@@ -8,10 +8,11 @@
 
 import UIKit
 import Foundation
-
+import Batch
+import Firebase
 
 class ViewController: UIViewController, UIScrollViewDelegate {
-
+    
     var pageImages: [UIImage] = []
     var pageViews: [UIImageView?] = []
     
@@ -20,11 +21,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet var ReplayIntroButton: UIButton!
     @IBOutlet var GotIt: UIButton!
+    @IBOutlet var RegisterPush: UIButton!
     
     @IBOutlet var VersionLabel: UILabel!
     @IBOutlet var ChristinaLabel: UILabel!
     
     override func viewDidLoad() {
+        
+        // Create a reference to a Firebase location
+        //let myRootRef = Firebase(url:Global.Firebase_URL)
+        // Write data to Firebase
+        //myRootRef.setValue("Do you have data? You'll love Firebase.")
         
         super.viewDidLoad()
         
@@ -33,6 +40,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.GotIt.hidden = true
         self.scrollView.hidden = true
         self.pageControl.hidden = true
+        
+        let notificationType = UIApplication.sharedApplication().currentUserNotificationSettings()!.types
+        if notificationType == UIUserNotificationType.None {
+            // Push notifications are disabled in setting by user.
+            RegisterPush.hidden = false
+        } else {
+            // Push notifications are enabled in setting by user.
+            //RegisterPush.hidden = true
+        }
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let name = defaults.stringForKey("intro")
@@ -46,13 +62,64 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         VersionLabel.text = "\(Appversion)β Happy Birthday Liz Edition"
         
         
+        
+    }
+    
+    @IBAction func RegisterForNotifications() {
+        
+        let notificationType = UIApplication.sharedApplication().currentUserNotificationSettings()!.types
+        if notificationType == UIUserNotificationType.None {
+            // Push notifications are disabled in setting by user.
+            let alert = UIAlertController(title: "Notifications",
+                                          message: "We're going to ask you to enbale Notifications. These will keep you informed about app updates. You can turn them off any time in your device's Settings app.",
+                                          preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            BatchPush.registerForRemoteNotifications()
+            
+            //Login Anonymously to Firebase
+            let ref = Firebase(url: Global.Firebase_URL)
+            ref.authAnonymouslyWithCompletionBlock { error, authData in
+                if error != nil {
+                    // There was an error logging in anonymously
+                    print("Error logging into Firebase")
+                } else {
+                    // We are now logged in
+                    
+                    // firebaseAuthData is populated by the result of "authAnonymouslyWithCompletionBlock" / "authWithOAuthProvider"
+                    let firebaseAuthData: FAuthData = authData
+                    
+                    let editor = BatchUser.editor()
+                    editor.setIdentifier(firebaseAuthData.uid)
+                    editor.save() // Do not forget to save the changes!
+                    print("Device linked to Firebase")
+                    
+                    
+                }
+            }
+            
+        }else{
+            // Push notifications are enabled in setting by user.
+            let alert = UIAlertController(title: "Notifications",
+                                          message: "We've checked your charts. You're all set for Notifications!",
+                                          preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
 
+        
+        
     }
     
     @IBAction func FinishIntro(sender: UIButton) {
         self.scrollView.hidden = true
         self.GotIt.hidden = true
         self.pageControl.hidden = true
+        RegisterForNotifications()
         
     }
     @IBAction func ReplayIntro(sender: UIButton) {
@@ -67,7 +134,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
         let pagesScrollViewSize = scrollView.frame.size
         scrollView.contentSize = CGSize(width: pagesScrollViewSize.width * CGFloat(pageImages.count),
-            height: pagesScrollViewSize.height)
+                                        height: pagesScrollViewSize.height)
         self.scrollView.hidden = false
         self.GotIt.hidden = false
         self.pageControl.hidden = false

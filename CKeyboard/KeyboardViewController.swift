@@ -8,8 +8,6 @@
 
 import UIKit
 import MobileCoreServices
-import Alamofire
-import SwiftyJSON
 
 class KeyboardViewController: UIInputViewController, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 

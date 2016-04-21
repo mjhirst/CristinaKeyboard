@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //TODO: switch to live api key before store release
-        Batch.startWithAPIKey(Global.Batch_Dev_Key)
+        Batch.startWithAPIKey(Global.Batch_Key)
         
         let editor = BatchUser.editor()
         editor.setAttribute("Developer", forKey:"channel") // Set an attribute

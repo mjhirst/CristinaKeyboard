@@ -14,7 +14,7 @@ class CollectionViewCell: UICollectionViewCell {
     
 override init(frame: CGRect) {
     
-    imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 120, height: 62))
+    imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 120, height: 70))
     imageView.contentMode = UIViewContentMode.ScaleAspectFill
     imageView.clipsToBounds = true
     imageView.backgroundColor = UIColor.clearColor()

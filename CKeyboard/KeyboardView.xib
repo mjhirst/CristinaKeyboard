@@ -78,10 +78,10 @@
                         <action selector="ButtondeleteKeyboard:" destination="-1" eventType="touchUpInside" id="ptc-MD-7Ge"/>
                     </connections>
                 </button>
-                <collectionView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="apH-G1-RhD">
+                <collectionView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="apH-G1-RhD">
                     <rect key="frame" x="0.0" y="32" width="320" height="144"/>
                     <color key="backgroundColor" red="0.95686274509803926" green="0.95294117647058818" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                    <inset key="scrollIndicatorInsets" minX="7" minY="3" maxX="7" maxY="3"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="2" maxX="7" maxY="2"/>
                     <collectionViewLayout key="collectionViewLayout" id="WSf-6S-fsV"/>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christina Copied!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z4-Kl-Y0i">
@@ -101,7 +101,7 @@
                         <constraint firstAttribute="width" constant="44" id="KWg-g9-blm"/>
                         <constraint firstAttribute="height" constant="44" id="R6G-k1-0m4"/>
                     </constraints>
-                    <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                     <state key="normal" image="christina_outline.png"/>
                     <connections>
                         <action selector="Switchmode:" destination="-1" eventType="touchUpInside" id="eZ1-UL-wmk"/>

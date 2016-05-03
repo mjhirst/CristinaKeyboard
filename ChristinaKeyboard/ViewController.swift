@@ -55,6 +55,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         if name != "read" {
             loadintro()
             defaults.setObject("read", forKey: "intro")
+            
         }
         
         let nsObject: AnyObject? = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"]
@@ -74,7 +75,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         ref.authAnonymouslyWithCompletionBlock { error, authData in
             if error != nil {
                 // There was an error logging in anonymously
-                print("Error logging into Firebase")
+                log.error("Error logging into Firebase")
             } else {
                 // We are now logged in
                 
@@ -84,7 +85,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 let editor = BatchUser.editor()
                 editor.setIdentifier(firebaseAuthData.uid)
                 editor.save() // Do not forget to save the changes!
-                print("Device linked to Firebase")
+                log.info("Device linked to Firebase")
                 
                 
             }
@@ -95,6 +96,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.hidden = true
         self.GotIt.hidden = true
         self.pageControl.hidden = true
+        log.info("Completed Onboarding")
         RegisterForNotifications()
         
     }

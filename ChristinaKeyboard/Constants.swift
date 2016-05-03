@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Firebase
 
 import UIKit
 
@@ -16,6 +15,10 @@ struct Global {
     
     static let Batch_Dev_Key = "DEV5717A85695C1FC1000DFD880C9A"
     static let Batch_Key = "5717A856939353B0E4A4B7EAF7B37E"
+    
+    static let SwiftyBeaver_AppID = "1P990V"
+    static let SwiftyBeaver_Secret = "IJgdcqy3iaqiqjHdhnh2tLchQJsDoTpy"
+    static let SwiftyBeaver_EncryptionKey = "7jzpa83zajn3fjl8rcH30MoiprfwdKdu"
 }
 
 struct GlobalColours {

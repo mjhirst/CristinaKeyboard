@@ -62,6 +62,18 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let Appversion = nsObject as! String
         VersionLabel.text = "\(Appversion)β Happy Birthday Liz Edition"
         
+        if (BatchPush.lastKnownPushToken() != nil){
+            //User has Push
+            let defaults = NSUserDefaults(suiteName: "group.com.marcushirst.ChristinaKeyboard")
+            let batch = BatchPush.lastKnownPushToken()
+            defaults!.setObject("\(batch!)", forKey: "UUID")
+//TODO : This is superfluous logging
+            log.verbose("\(defaults!.stringForKey("UUID")!)")
+            
+        } else {
+            
+        }
+        
         
         
     }
@@ -85,10 +97,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
                 let editor = BatchUser.editor()
                 editor.setIdentifier(firebaseAuthData.uid)
                 editor.save() // Do not forget to save the changes!
-                log.info("Device linked to Firebase")
+                
                 
                 
             }
+            
         }
     
     }
@@ -158,10 +171,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             return
         }
         
-        // 1
-        if let pageView = pageViews[page] {
-            // Do nothing. The view is already loaded.
-        } else {
             // 2
             var frame = scrollView.bounds
             frame.origin.x = frame.size.width * CGFloat(page)
@@ -175,7 +184,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             
             // 4
             pageViews[page] = newPageView
-        }
+        
     }
     
     func purgePage(page: Int) {
@@ -204,9 +213,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let lastPage = page + 1
         
         // Purge anything before the first page
-        for var index = 0; index < firstPage; ++index {
+        for index in firstPage.stride(to: -1, by: 1) {
             purgePage(index)
         }
+  //      for var index = 0; index < firstPage; ++index {
+  //         purgePage(index)
+  //      }
         
         // Load pages in our range
         for index in firstPage...lastPage {
@@ -214,9 +226,12 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         }
         
         // Purge anything after the last page
-        for var index = lastPage+1; index < pageImages.count; ++index {
+        for index in lastPage.stride(to: pageImages.count+1, by: 1) {
             purgePage(index)
         }
+  //      for var index = lastPage+1; index < pageImages.count; ++index{
+  //          purgePage(index)
+  //      }
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {

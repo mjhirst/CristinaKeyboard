@@ -9,6 +9,7 @@
 import UIKit
 import Batch
 import SwiftyBeaver
+import Firebase
 
 let log = SwiftyBeaver.self
 
@@ -24,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // add log destinations. at least one is needed!
         let console = ConsoleDestination()  // log to Xcode Console
         let cloud = SBPlatformDestination(appID: Global.SwiftyBeaver_AppID, appSecret: Global.SwiftyBeaver_Secret, encryptionKey: Global.SwiftyBeaver_EncryptionKey) // to cloud
+        cloud.analyticsUserName = "\(BatchPush.lastKnownPushToken())"
         log.addDestination(console)
         log.addDestination(cloud)
         

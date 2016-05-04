@@ -9,6 +9,7 @@
 import UIKit
 import MobileCoreServices
 import SwiftyBeaver
+import Firebase
 
 class KeyboardViewController: UIInputViewController, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
@@ -193,9 +194,34 @@ class KeyboardViewController: UIInputViewController, UIScrollViewDelegate, UICol
                         let url: NSURL = NSBundle.mainBundle().URLForResource("image-\(tag)", withExtension: ".gif")!
                         let data: NSData = NSData(contentsOfURL: url)!
                         UIPasteboard.generalPasteboard().setData(data, forPasteboardType: "com.compuserve.gif")
-                    
-//TODO: Make this Firebase > Numerics
+
                     log.verbose("Image \(tag) sent ")
+                    
+                    //TODO: Make this transactional at some point
+                    let upvotesRef = Firebase(url: "\(Global.Firebase_URL)/dashboard/image_stats/data/\(tag-1)/value")
+                    
+                    upvotesRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
+                        self.log.verbose(snapshot.value)
+                        
+                        if ((snapshot.value as? Int) != nil){
+                            //Update Firebase
+        
+                            let ref = Firebase(url: "\(Global.Firebase_URL)/dashboard/image_stats/data/\(tag-1)")
+                            let maths = snapshot.value as! Int + 1
+                            let val = ["value" : maths]
+                            ref.updateChildValues(val)
+                            
+                        } else {
+                            //No entry in Firebase. Creating one to make life easier.
+                            self.log.error("The dashboard was not updated. Data \(tag-1) was not found for Image-\(tag)\nAttempting to create an entry for the Numerics Dashboard should the network allow.")
+                            let ref = Firebase(url: "\(Global.Firebase_URL)/dashboard/image_stats/data/")
+                            let dashRef = ref.childByAppendingPath("\(tag-1)")
+                            dashRef.updateChildValues(["name": "image-\(tag).png", "value": 1])
+                            
+                        }
+                        
+                    })
+                    ///////
                     
                     
 

@@ -540,6 +540,7 @@
 				2C0003441C0912C0007A17D9 /* Resources */,
 				AA49F2D2F4CA8E4554424237 /* 📦 Embed Pods Frameworks */,
 				9A93E19104D443D4580795D8 /* 📦 Copy Pods Resources */,
+				2CF0A7741CDA35B700CE01A2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -814,6 +815,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2CF0A7741CDA35B700CE01A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
 		3E60C9457FD42BE81AE03200 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1172,6 +1186,7 @@
 				CODE_SIGN_ENTITLEMENTS = CKeyboard/CKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1194,6 +1209,7 @@
 				CODE_SIGN_ENTITLEMENTS = CKeyboard/CKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

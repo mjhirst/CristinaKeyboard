@@ -14,6 +14,7 @@
 		2C00033B1C091253007A17D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0003391C091253007A17D9 /* LaunchScreen.storyboard */; };
 		2C0003491C0912C0007A17D9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0003481C0912C0007A17D9 /* KeyboardViewController.swift */; };
 		2C00034D1C0912C0007A17D9 /* CKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C0003461C0912C0007A17D9 /* CKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C041A7C1CF5AC8700B67E58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C041A7B1CF5AC8700B67E58 /* GoogleService-Info.plist */; };
 		2C1DD3071C09327A007E31C4 /* 341-keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DD3061C09327A007E31C4 /* 341-keyboard@3x.png */; };
 		2C1DD3081C09327A007E31C4 /* 341-keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DD3061C09327A007E31C4 /* 341-keyboard@3x.png */; };
 		2C1DD30A1C093475007E31C4 /* 888-checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C1DD3091C093475007E31C4 /* 888-checkmark@2x.png */; };
@@ -172,6 +173,12 @@
 		2C9BBF941C09172B0061FFC7 /* 715-globe-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C9BBF921C09172B0061FFC7 /* 715-globe-toolbar@3x.png */; };
 		2CA32A751C661684004A6CF0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2CA32A741C661684004A6CF0 /* Podfile */; };
 		2CA32A771C663C2C004A6CF0 /* 350-text@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA32A761C663C2C004A6CF0 /* 350-text@3x.png */; };
+		2CA68F3D1CFCF4C80073F3B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA68F3C1CFCF4C80073F3B1 /* Settings.swift */; };
+		2CA68F3F1CFCFF8F0073F3B1 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA68F3E1CFCFF8F0073F3B1 /* Feedback.swift */; };
+		2CA68F401CFD0E0A0073F3B1 /* 350-text@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA32A761C663C2C004A6CF0 /* 350-text@3x.png */; };
+		2CA68F411CFD0E0A0073F3B1 /* 870-smile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C4895D01C679D0F0051D6B7 /* 870-smile@3x.png */; };
+		2CBC25CD1CF4EE880037CB7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBC25CC1CF4EE880037CB7C /* GoogleService-Info.plist */; };
+		2CBC25CE1CF4EE880037CB7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CBC25CC1CF4EE880037CB7C /* GoogleService-Info.plist */; };
 		2CC58D921C2CABFA00B5CBE4 /* 330-layers4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */; };
 		2CC58D931C2CABFA00B5CBE4 /* 330-layers4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */; };
 		2CC58D9A1C2CBAF700B5CBE4 /* intro-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CC58D941C2CB78E00B5CBE4 /* intro-1.png */; };
@@ -218,6 +225,7 @@
 		2C0003461C0912C0007A17D9 /* CKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0003481C0912C0007A17D9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		2C00034A1C0912C0007A17D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C041A7B1CF5AC8700B67E58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C1DD3061C09327A007E31C4 /* 341-keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "341-keyboard@3x.png"; sourceTree = "<group>"; };
 		2C1DD3091C093475007E31C4 /* 888-checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "888-checkmark@2x.png"; sourceTree = "<group>"; };
 		2C2799161C0A57DB004B80CC /* 342-delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "342-delete@3x.png"; sourceTree = "<group>"; };
@@ -301,6 +309,9 @@
 		2C9BBF921C09172B0061FFC7 /* 715-globe-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "715-globe-toolbar@3x.png"; path = "../ChristinaKeyboard/715-globe-toolbar@3x.png"; sourceTree = "<group>"; };
 		2CA32A741C661684004A6CF0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2CA32A761C663C2C004A6CF0 /* 350-text@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "350-text@3x.png"; sourceTree = "<group>"; };
+		2CA68F3C1CFCF4C80073F3B1 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		2CA68F3E1CFCFF8F0073F3B1 /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		2CBC25CC1CF4EE880037CB7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2CC58D911C2CABFA00B5CBE4 /* 330-layers4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "330-layers4@3x.png"; sourceTree = "<group>"; };
 		2CC58D941C2CB78E00B5CBE4 /* intro-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro-1.png"; sourceTree = "<group>"; };
 		2CC58D951C2CB78E00B5CBE4 /* intro-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "intro-2.png"; sourceTree = "<group>"; };
@@ -351,6 +362,7 @@
 			children = (
 				2CDF68BF1CD96DE7003E0AA3 /* Constants.swift */,
 				2CA32A741C661684004A6CF0 /* Podfile */,
+				2CBC25CC1CF4EE880037CB7C /* GoogleService-Info.plist */,
 				2C00032F1C091253007A17D9 /* ChristinaKeyboard */,
 				2C0003471C0912C0007A17D9 /* CKeyboard */,
 				2C00032E1C091253007A17D9 /* Products */,
@@ -374,6 +386,8 @@
 				2C6519AE1CD977A100C7A4E0 /* ChristinaKeyboard.entitlements */,
 				2C0003301C091253007A17D9 /* AppDelegate.swift */,
 				2C0003321C091253007A17D9 /* ViewController.swift */,
+				2CA68F3C1CFCF4C80073F3B1 /* Settings.swift */,
+				2CA68F3E1CFCFF8F0073F3B1 /* Feedback.swift */,
 				2C0003341C091253007A17D9 /* Main.storyboard */,
 				2C0003371C091253007A17D9 /* Assets.xcassets */,
 				2C0003391C091253007A17D9 /* LaunchScreen.storyboard */,
@@ -390,6 +404,7 @@
 		2C0003471C0912C0007A17D9 /* CKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2C041A7B1CF5AC8700B67E58 /* GoogleService-Info.plist */,
 				2CED96E91CD97B9100006E12 /* CKeyboard.entitlements */,
 				2C9A48041CC8176200CC9BD8 /* moving */,
 				2C9A483C1CC8176200CC9BD8 /* static */,
@@ -510,15 +525,12 @@
 			buildConfigurationList = 2C00033F1C091253007A17D9 /* Build configuration list for PBXNativeTarget "ChristinaKeyboard" */;
 			buildPhases = (
 				3E60C9457FD42BE81AE03200 /* 📦 Check Pods Manifest.lock */,
-				AB13868BEAB4862F815D1E15 /* Check Pods Manifest.lock */,
 				2C0003291C091253007A17D9 /* Sources */,
 				2C00032A1C091253007A17D9 /* Frameworks */,
 				2C00032B1C091253007A17D9 /* Resources */,
 				2C0003511C0912C0007A17D9 /* Embed App Extensions */,
 				772440206C8B8C275B879478 /* 📦 Copy Pods Resources */,
 				68BFCF36AC0BABE7D5D794CE /* 📦 Embed Pods Frameworks */,
-				953DE8B133C95D54EA50FE02 /* Embed Pods Frameworks */,
-				1FF1682D3C5DCD35E7E6C062 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -652,6 +664,7 @@
 				2C9A48611CC8176200CC9BD8 /* image-20.gif in Resources */,
 				2C9A48C31CC8176200CC9BD8 /* image-62.gif in Resources */,
 				2C9A48BF1CC8176200CC9BD8 /* image-60.gif in Resources */,
+				2CBC25CD1CF4EE880037CB7C /* GoogleService-Info.plist in Resources */,
 				2C9A48651CC8176200CC9BD8 /* image-22.gif in Resources */,
 				2C9A485F1CC8176200CC9BD8 /* image-2.gif in Resources */,
 				2C9A48911CC8176200CC9BD8 /* image-42.gif in Resources */,
@@ -663,8 +676,10 @@
 				2C27991A1C0A57F0004B80CC /* 433-x@2x.png in Resources */,
 				2C9A48B91CC8176200CC9BD8 /* image-57.gif in Resources */,
 				2C1DD30A1C093475007E31C4 /* 888-checkmark@2x.png in Resources */,
+				2CA68F401CFD0E0A0073F3B1 /* 350-text@3x.png in Resources */,
 				2C9A484B1CC8176200CC9BD8 /* image-10.gif in Resources */,
 				2C9A48511CC8176200CC9BD8 /* image-13.gif in Resources */,
+				2CA68F411CFD0E0A0073F3B1 /* 870-smile@3x.png in Resources */,
 				2C9A48531CC8176200CC9BD8 /* image-14.gif in Resources */,
 				2C9A48B31CC8176200CC9BD8 /* image-8.gif in Resources */,
 				2C9A48991CC8176200CC9BD8 /* image-46.gif in Resources */,
@@ -715,6 +730,7 @@
 				2C9A47331CC7F68200CC9BD8 /* settings.png in Resources */,
 				2C9A485A1CC8176200CC9BD8 /* image-17.gif in Resources */,
 				2C1DD3081C09327A007E31C4 /* 341-keyboard@3x.png in Resources */,
+				2C041A7C1CF5AC8700B67E58 /* GoogleService-Info.plist in Resources */,
 				2C9A48721CC8176200CC9BD8 /* image-28.gif in Resources */,
 				2C9A48841CC8176200CC9BD8 /* image-36.gif in Resources */,
 				2C9A486A1CC8176200CC9BD8 /* image-24.gif in Resources */,
@@ -758,6 +774,7 @@
 				2C9A48CA1CC8176200CC9BD8 /* image-65.gif in Resources */,
 				2C9A48661CC8176200CC9BD8 /* image-22.gif in Resources */,
 				2C9A48961CC8176200CC9BD8 /* image-44.gif in Resources */,
+				2CBC25CE1CF4EE880037CB7C /* GoogleService-Info.plist in Resources */,
 				2C9A486C1CC8176200CC9BD8 /* image-25.gif in Resources */,
 				2C9A48B41CC8176200CC9BD8 /* image-8.gif in Resources */,
 				2C9A486E1CC8176200CC9BD8 /* image-26.gif in Resources */,
@@ -799,21 +816,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		1FF1682D3C5DCD35E7E6C062 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2CF0A7741CDA35B700CE01A2 /* ShellScript */ = {
@@ -874,21 +876,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		953DE8B133C95D54EA50FE02 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChristinaKeyboard/Pods-ChristinaKeyboard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9A93E19104D443D4580795D8 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -919,21 +906,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CKeyboard/Pods-CKeyboard-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB13868BEAB4862F815D1E15 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -943,8 +915,10 @@
 			files = (
 				2C9A47371CC8079F00CC9BD8 /* SwiftGif+UIImage.swift in Sources */,
 				2C0003331C091253007A17D9 /* ViewController.swift in Sources */,
+				2CA68F3F1CFCFF8F0073F3B1 /* Feedback.swift in Sources */,
 				2C0003311C091253007A17D9 /* AppDelegate.swift in Sources */,
 				2CDF68C01CD96DE7003E0AA3 /* Constants.swift in Sources */,
+				2CA68F3D1CFCF4C80073F3B1 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,45 +1055,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ChristinaKeyboard/ChristinaKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = ChristinaKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"sqlite3\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"Alamofire\"",
-					"-framework",
-					"\"Batch\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Firebase\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SwiftyJSON\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"$(inherited)",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcushirst.ChristinaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1134,45 +1074,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ChristinaKeyboard/ChristinaKeyboard.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = ChristinaKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"sqlite3\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"Alamofire\"",
-					"-framework",
-					"\"Batch\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"Firebase\"",
-					"-framework",
-					"\"Foundation\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"SwiftyJSON\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
-					"$(inherited)",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.marcushirst.ChristinaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1187,10 +1093,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = CKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1210,10 +1113,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = CKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";

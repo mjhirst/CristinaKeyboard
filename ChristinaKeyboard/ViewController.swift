@@ -23,17 +23,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var GotIt: UIButton!
     @IBOutlet var RegisterPush: UIButton!
     
-    @IBOutlet var VersionLabel: UILabel!
     @IBOutlet var ChristinaLabel: UILabel!
     
     override func viewDidLoad() {
         
-        // Create a reference to a Firebase location
-        //let myRootRef = Firebase(url:Global.Firebase_URL)
-        // Write data to Firebase
-        //myRootRef.setValue("Do you have data? You'll love Firebase.")
-        
-        super.viewDidLoad()
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let name = defaults.stringForKey("intro")
+        if name != "read" {
+            loadintro()
+            defaults.setObject("read", forKey: "intro")
+            
+        }
         
         view.backgroundColor = UIColor(colorLiteralRed:0.886, green:0.890, blue:0.914, alpha:1.000)
         
@@ -50,30 +50,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             //RegisterPush.hidden = true
         }
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let name = defaults.stringForKey("intro")
-        if name != "read" {
-            loadintro()
-            defaults.setObject("read", forKey: "intro")
-            
-        }
-        
-        let nsObject: AnyObject? = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"]
-        let Appversion = nsObject as! String
-        VersionLabel.text = "\(Appversion)β Happy Birthday Liz Edition"
-        
         if (BatchPush.lastKnownPushToken() != nil){
             //User has Push
             let defaults = NSUserDefaults(suiteName: "group.com.marcushirst.ChristinaKeyboard")
             let batch = BatchPush.lastKnownPushToken()
             defaults!.setObject("\(batch!)", forKey: "UUID")
-//TODO : This is superfluous logging
-            log.verbose("\(defaults!.stringForKey("UUID")!)")
             
         } else {
             
         }
         
+        super.viewDidLoad()
         
         
     }
@@ -82,28 +69,17 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         BatchPush.registerForRemoteNotifications()
         
-        //Login Anonymously to Firebase
-        let ref = Firebase(url: Global.Firebase_URL)
-        ref.authAnonymouslyWithCompletionBlock { error, authData in
-            if error != nil {
-                // There was an error logging in anonymously
-                log.error("Error logging into Firebase")
+        FIRAuth.auth()!.signInAnonymouslyWithCompletion() { (user, error) in
+            if let error = error {
+                log.error("Sign in failed:", error.localizedDescription)
             } else {
-                // We are now logged in
-                
-                // firebaseAuthData is populated by the result of "authAnonymouslyWithCompletionBlock" / "authWithOAuthProvider"
-                let firebaseAuthData: FAuthData = authData
-                
+                log.info ("Signed in with uid:", user!.uid)
                 let editor = BatchUser.editor()
-                editor.setIdentifier(firebaseAuthData.uid)
-                editor.save() // Do not forget to save the changes!
-                
-                
-                
+                editor.setIdentifier(user!.uid)
+                editor.save()
             }
-            
         }
-    
+
     }
     @IBAction func FinishIntro(sender: UIButton) {
         self.scrollView.hidden = true
@@ -126,6 +102,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let pagesScrollViewSize = scrollView.frame.size
         scrollView.contentSize = CGSize(width: pagesScrollViewSize.width * CGFloat(pageImages.count),
                                         height: pagesScrollViewSize.height)
+        scrollView.center = view.center;
         self.scrollView.hidden = false
         self.GotIt.hidden = false
         self.pageControl.hidden = false
@@ -170,7 +147,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             // If it's outside the range of what you have to display, then do nothing
             return
         }
-        
+        // 1
+        if pageViews[page] != nil {
+        //if let pageView = pageViews[page] {
+            // Do nothing. The view is already loaded.
+        } else {
             // 2
             var frame = scrollView.bounds
             frame.origin.x = frame.size.width * CGFloat(page)
@@ -184,7 +165,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             
             // 4
             pageViews[page] = newPageView
-        
+        }
     }
     
     func purgePage(page: Int) {

@@ -14,7 +14,11 @@ class CollectionViewCell: UICollectionViewCell {
     
 override init(frame: CGRect) {
     
-    imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 120, height: 70))
+    let size: CGRect = UIScreen.mainScreen().bounds
+    imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width * 0.34, height: size.height * 0.205))
+    
+    //imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: screenSize.width * 0.34, height: screenSize.width * 0.207))
+    //imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 120, height: 70))
     imageView.contentMode = UIViewContentMode.ScaleAspectFill
     imageView.clipsToBounds = true
     imageView.backgroundColor = UIColor.clearColor()

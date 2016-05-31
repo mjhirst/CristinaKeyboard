@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -81,13 +81,12 @@
                 <collectionView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="apH-G1-RhD">
                     <rect key="frame" x="0.0" y="32" width="320" height="144"/>
                     <color key="backgroundColor" red="0.95686274509803926" green="0.95294117647058818" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                    <inset key="scrollIndicatorInsets" minX="0.0" minY="2" maxX="7" maxY="2"/>
                     <collectionViewLayout key="collectionViewLayout" id="WSf-6S-fsV"/>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christina Copied!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Z4-Kl-Y0i">
-                    <rect key="frame" x="32" y="10" width="98" height="15"/>
+                    <rect key="frame" x="32" y="10" width="280" height="15"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="98" id="Dcr-Tx-qbJ"/>
+                        <constraint firstAttribute="width" constant="280" id="Dcr-Tx-qbJ"/>
                         <constraint firstAttribute="height" constant="15" id="aCT-J6-u9t"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -125,7 +124,7 @@
                         <constraint firstAttribute="height" constant="44" id="aLp-p3-Jys"/>
                     </constraints>
                     <inset key="contentEdgeInsets" minX="11" minY="11" maxX="11" maxY="11"/>
-                    <state key="normal" image="870-smile.png"/>
+                    <state key="normal" title="🚑"/>
                     <connections>
                         <action selector="Switchmode:" destination="-1" eventType="touchUpInside" id="N2f-ee-jd0"/>
                     </connections>
@@ -163,7 +162,6 @@
         <image name="341-keyboard.png" width="33" height="21"/>
         <image name="342-delete.png" width="27" height="18"/>
         <image name="715-globe-toolbar.png" width="22" height="22"/>
-        <image name="870-smile.png" width="28" height="28"/>
         <image name="888-checkmark.png" width="28" height="28"/>
         <image name="christina_outline.png" width="200" height="200"/>
     </resources>

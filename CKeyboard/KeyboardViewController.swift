@@ -51,6 +51,8 @@ class KeyboardViewController: UIInputViewController, UIScrollViewDelegate, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        FIRApp.configure()
+        
         let cloud = SBPlatformDestination(appID: Global.SwiftyBeaver_AppID, appSecret: Global.SwiftyBeaver_Secret, encryptionKey: Global.SwiftyBeaver_EncryptionKey) // to cloud
         let defaults = NSUserDefaults(suiteName: "group.com.marcushirst.ChristinaKeyboard")
         let name = defaults!.stringForKey("UUID")
@@ -94,7 +96,8 @@ class KeyboardViewController: UIInputViewController, UIScrollViewDelegate, UICol
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        var size = CGSizeMake(collectionView.frame.size.width / 3.2, collectionView.frame.size.height / 2.2)
+        let Asize: CGRect = UIScreen.mainScreen().bounds
+        var size = CGSizeMake(Asize.width * 0.34 , Asize.height * 0.205)
         
         if state == "emoji" {
         size.width += 0 // add margin if necessary
@@ -194,37 +197,23 @@ class KeyboardViewController: UIInputViewController, UIScrollViewDelegate, UICol
                         let url: NSURL = NSBundle.mainBundle().URLForResource("image-\(tag)", withExtension: ".gif")!
                         let data: NSData = NSData(contentsOfURL: url)!
                         UIPasteboard.generalPasteboard().setData(data, forPasteboardType: "com.compuserve.gif")
-
+                    
                     log.verbose("Image \(tag) sent ")
                     
-                    //TODO: Make this transactional at some point
-                    let upvotesRef = Firebase(url: "\(Global.Firebase_URL)/dashboard/image_stats/data/\(tag-1)/value")
                     
-                    upvotesRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-                        self.log.verbose(snapshot.value)
-                        
-                        if ((snapshot.value as? Int) != nil){
-                            //Update Firebase
-        
-                            let ref = Firebase(url: "\(Global.Firebase_URL)/dashboard/image_stats/data/\(tag-1)")
-                            let maths = snapshot.value as! Int + 1
-                            let val = ["value" : maths]
-                            ref.updateChildValues(val)
-                            
-                        } else {
-                            //No entry in Firebase. Creating one to make life easier.
-                            self.log.error("The dashboard was not updated. Data \(tag-1) was not found for Image-\(tag)\nAttempting to create an entry for the Numerics Dashboard should the network allow.")
-                            let ref = Firebase(url: "\(Global.Firebase_URL)/dashboard/image_stats/data/")
-                            let dashRef = ref.childByAppendingPath("\(tag-1)")
-                            dashRef.updateChildValues(["name": "image-\(tag).png", "value": 1])
-                            
+                    
+                    let ref = FIRDatabase.database().reference()
+                
+                    ref.child("dashboard/image_stats/data/\(tag-1)").observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+                        if snapshot.value != nil {
+                    
+                            let value = snapshot.value!["value"] as! Int
+                            ref.child("dashboard/image_stats/data/\(tag-1)/value").setValue(value + 1)
                         }
-                        
                     })
-                    ///////
-                    
-                    
-
+                    { (error) in
+                        self.log.error("error")//error.localizedDescription)
+                    }
                 }
                 if state == "text" {
                 

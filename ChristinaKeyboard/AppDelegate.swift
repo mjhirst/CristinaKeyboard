@@ -11,6 +11,7 @@ import Batch
 import SwiftyBeaver
 import Firebase
 
+
 let log = SwiftyBeaver.self
 
 @UIApplicationMain
@@ -21,19 +22,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        //Firebase
+        FIRApp.configure()
+        
         //SwiftyBeaver Logging
-        // add log destinations. at least one is needed!
         let console = ConsoleDestination()  // log to Xcode Console
         let cloud = SBPlatformDestination(appID: Global.SwiftyBeaver_AppID, appSecret: Global.SwiftyBeaver_Secret, encryptionKey: Global.SwiftyBeaver_EncryptionKey) // to cloud
         cloud.analyticsUserName = "\(BatchPush.lastKnownPushToken())"
         log.addDestination(console)
         log.addDestination(cloud)
         
-        //TODO: switch to live api key before store release
         Batch.startWithAPIKey(Global.Batch_Key)
-        let editor = BatchUser.editor()
-        editor.setAttribute("Developer", forKey:"channel") // Set an attribute
-        editor.save() // Don't forget to save the changes
+        //let editor = BatchUser.editor()
+        //editor.setAttribute("Developer", forKey:"channel") // Set an attribute
+        //editor.save() // Don't forget to save the changes
         return true
     }
     

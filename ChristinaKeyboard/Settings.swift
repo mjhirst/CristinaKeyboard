@@ -8,13 +8,9 @@
 
 import UIKit
 import Foundation
-import Alamofire
-import SwiftyJSON
-import SwiftyBeaver
 
 class Settings: UITableViewController {
     
-    let log = SwiftyBeaver.self //SwiftyBeaver
     let textCellIdentifier = "cell" //ReusableIdentifier
     var items = [[""] , [""]]
     var imagelist = [[UIImage()],[UIImage()]]

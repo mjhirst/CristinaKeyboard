@@ -71,9 +71,9 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         FIRAuth.auth()!.signInAnonymouslyWithCompletion() { (user, error) in
             if let error = error {
-                log.error("Sign in failed:", error.localizedDescription)
+                print("Sign in failed:", error.localizedDescription)
             } else {
-                log.info ("Signed in with uid:", user!.uid)
+                print ("Signed in with uid:", user!.uid)
                 let editor = BatchUser.editor()
                 editor.setIdentifier(user!.uid)
                 editor.save()
@@ -85,7 +85,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.hidden = true
         self.GotIt.hidden = true
         self.pageControl.hidden = true
-        log.info("Completed Onboarding")
+        print("Completed Onboarding")
         RegisterForNotifications()
         
     }

@@ -8,11 +8,8 @@
 
 import UIKit
 import Batch
-import SwiftyBeaver
 import Firebase
 
-
-let log = SwiftyBeaver.self
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,13 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Firebase
         FIRApp.configure()
-        
-        //SwiftyBeaver Logging
-        let console = ConsoleDestination()  // log to Xcode Console
-        let cloud = SBPlatformDestination(appID: Global.SwiftyBeaver_AppID, appSecret: Global.SwiftyBeaver_Secret, encryptionKey: Global.SwiftyBeaver_EncryptionKey) // to cloud
-        cloud.analyticsUserName = "\(BatchPush.lastKnownPushToken())"
-        log.addDestination(console)
-        log.addDestination(cloud)
         
         Batch.startWithAPIKey(Global.Batch_Key)
         //let editor = BatchUser.editor()

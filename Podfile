@@ -7,13 +7,12 @@ def shared_pods
     pod 'Firebase/Core’
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
-    pod 'SwiftyBeaver'
 end
 
 target 'ChristinaKeyboard' do
     shared_pods
-    pod 'Alamofire', '~> 2.0'
-    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'Alamofire', '~> 3.4'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branch => 'swift2'
     pod 'Batch', '~> 1.5'
 end
 

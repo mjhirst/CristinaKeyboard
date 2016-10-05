@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChristinaKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CristinaKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,56 +20,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Kzp-pS-Pcd">
-                                <rect key="frame" x="281" y="563" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.52941176469999995" green="0.53725490200000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.52941176469999995" green="0.53725490200000003" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPQ-xL-EM6">
-                                <rect key="frame" x="515" y="569" width="78" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="78" id="5vy-jO-vmI"/>
                                     <constraint firstAttribute="height" constant="25" id="esb-bn-9YP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Got it &gt;&gt;">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.18039215689999999" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="FinishIntro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="poI-eU-9oW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-JV-kZv">
-                                <rect key="frame" x="224" y="148" width="150" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="Replay How to Install">
-                                    <color key="titleColor" red="0.18039215689999999" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.18039215689999999" green="0.21176470589999999" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="ReplayIntro:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dU0-hE-wUO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="× 68" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahi-hO-LXp">
-                                <rect key="frame" x="326" y="211" width="208" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.52941176469999995" green="0.53725490200000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.53725490200000003" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="christina_outline.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWW-ft-ZvV">
-                                <rect key="frame" x="274" y="196" width="52" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="XP7-eW-W23"/>
                                     <constraint firstAttribute="width" constant="52" id="zrX-a3-2x2"/>
                                 </constraints>
                             </imageView>
                             <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="tFG-jP-HQH">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="570"/>
-                                <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.8862745098" green="0.89019607840000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="wgs-XY-gOj"/>
                                 </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4l-iq-G5Q">
-                                <rect key="frame" x="553" y="28" width="27" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="FPS-cd-kDq"/>
                                     <constraint firstAttribute="height" constant="27" id="oFp-Sp-52A"/>
@@ -79,7 +73,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PAQ-JV-kZv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="C6B-Rb-b23"/>
                             <constraint firstAttribute="bottom" secondItem="tFG-jP-HQH" secondAttribute="bottom" constant="30" id="Ctp-0Q-oGJ"/>
@@ -121,17 +115,17 @@
         <!--Settings-->
         <scene sceneID="HHf-gH-Svh">
             <objects>
-                <tableViewController storyboardIdentifier="Settings" title="Settings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K5r-lG-ltt" customClass="Settings" customModule="ChristinaKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Settings" title="Settings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K5r-lG-ltt" customClass="Settings" customModule="CristinaKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="dlC-7j-wC3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dz7-08-qUu">
-                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="120" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dz7-08-qUu" id="g3E-go-sFy">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <frame key="frameInset" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -143,7 +137,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="iG0-GO-gOv">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="ND1-gv-X1g">
-                            <color key="tintColor" red="1" green="0.38374030590000002" blue="0.31600964069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.98771697282791138" green="0.28673803806304932" blue="0.25093698501586914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="modal" identifier="BackfromSettings" id="GBN-zH-DXh"/>
                             </connections>
@@ -172,9 +166,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4h-aH-7YC">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">----- Services -----
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">----- Services -----
 Package management by Cocoapods: https://cocoapods.com
 Database hosting by Google Firebase: https://firebase.google.com
 Push Notifications by Batch: https://batch.com
@@ -268,12 +261,12 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</mutableString>
+SOFTWARE.</string>
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="B4h-aH-7YC" secondAttribute="trailing" id="JFL-OX-v3D"/>
                             <constraint firstItem="B4h-aH-7YC" firstAttribute="top" secondItem="fCe-u7-Vlj" secondAttribute="top" constant="64" id="o6Z-j4-0b9"/>
@@ -290,7 +283,7 @@ SOFTWARE.</mutableString>
         <!--Send Feedback-->
         <scene sceneID="pwP-8R-nYb">
             <objects>
-                <viewController storyboardIdentifier="Feedback" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZLh-ZW-0EI" customClass="Feedback" customModule="ChristinaKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Feedback" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZLh-ZW-0EI" customClass="Feedback" customModule="CristinaKeyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f37-XO-9P1"/>
                         <viewControllerLayoutGuide type="bottom" id="a8X-bD-JuS"/>
@@ -300,9 +293,8 @@ SOFTWARE.</mutableString>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7gc-Ac-n6Z">
-                                <rect key="frame" x="20" y="87" width="560" height="30"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="0.38374030590000002" blue="0.31600964069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.98771697282791138" green="0.28673803806304932" blue="0.25093698501586914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="AR7-OM-vNS"/>
                                 </constraints>
@@ -310,16 +302,17 @@ SOFTWARE.</mutableString>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DIe-4z-IdX">
-                                <rect key="frame" x="20" y="182" width="560" height="324"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="0.38374030590000002" blue="0.31600964069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.98771697282791138" green="0.28673803806304932" blue="0.25093698501586914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZLh-ZW-0EI" id="jI3-hX-MA3"/>
+                                </connections>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Your Email Address (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YEu-KI-Iei">
-                                <rect key="frame" x="20" y="133" width="560" height="30"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="0.38374030590000002" blue="0.31600964069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.98771697282791138" green="0.28673803806304932" blue="0.25093698501586914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KbY-1T-gFh"/>
                                 </constraints>
@@ -327,7 +320,7 @@ SOFTWARE.</mutableString>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7gc-Ac-n6Z" firstAttribute="leading" secondItem="ePP-FA-oCf" secondAttribute="leadingMargin" id="4mX-QK-bIF"/>
                             <constraint firstItem="7gc-Ac-n6Z" firstAttribute="trailing" secondItem="ePP-FA-oCf" secondAttribute="trailingMargin" id="CIe-61-pLm"/>
@@ -371,16 +364,14 @@ SOFTWARE.</mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-64.gif" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-XN-b8C">
-                                <rect key="frame" x="0.0" y="64" width="600" height="124"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-58.gif" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-XN-b8C">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="moU-n1-qss"/>
                                     <constraint firstAttribute="height" constant="124" id="rBn-uo-0F3"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7F1-wk-nj4">
-                                <rect key="frame" x="20" y="188" width="560" height="412"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <mutableString key="text">DR. Cristina Yang, as you are probably well aware, is a powerful character in the Shonda Rhimes TV Series "Grey's Anatomy" played by Sandra Oh. Character Rights belong to Shonda Rhimes, this app is a tribute.
 
 Liz and I are Architecture students and face similar crazy stresses. Cristina was always level-headed and felt the appropriate amount of emotion at the appropriate time. We’d have a small picture of her up on our studio wall to help us channel her inner spirit to get through the day. For Liz’s birthday, I coded this keyboard extension (much more primitive than it is today) so we should send little reminders to each other. All the beta versions were titled “Happy Birthday Liz Edition”. I hope with this little app, you can channel her inner warrior too.</mutableString>
@@ -388,7 +379,7 @@ Liz and I are Architecture students and face similar crazy stresses. Cristina wa
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7F1-wk-nj4" firstAttribute="leading" secondItem="JRW-5A-lne" secondAttribute="leading" constant="20" id="FRm-q7-6EO"/>
                             <constraint firstAttribute="trailing" secondItem="7F1-wk-nj4" secondAttribute="trailing" constant="20" id="KVz-VB-K1q"/>
@@ -414,7 +405,7 @@ Liz and I are Architecture students and face similar crazy stresses. Cristina wa
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a5g-nJ-YPf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="0.38374030590000002" blue="0.31600964069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.98771697282791138" green="0.28673803806304932" blue="0.25093698501586914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="K5r-lG-ltt" kind="relationship" relationship="rootViewController" id="dPC-oZ-dmf"/>
@@ -427,7 +418,12 @@ Liz and I are Architecture students and face similar crazy stresses. Cristina wa
     </scenes>
     <resources>
         <image name="christina_outline.png" width="200" height="200"/>
-        <image name="image-64.gif" width="200" height="172"/>
+        <image name="image-58.gif" width="200" height="72"/>
         <image name="settings.png" width="84" height="84"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
